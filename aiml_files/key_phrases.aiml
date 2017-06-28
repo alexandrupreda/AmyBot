@@ -14,6 +14,13 @@
   </category>
 
   <category>
+    <pattern>* LETS TALK ABOUT *</pattern>
+    <template>
+      <srai>LETS TALK ABOUT <star index ="2"/></srai>
+    </template>
+  </category>
+  
+  <category>
     <pattern>LETS TALK ABOUT SOMETHING ELSE</pattern>
     <template>
       <random>

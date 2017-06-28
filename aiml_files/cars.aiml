@@ -1,5 +1,64 @@
 <aiml version="1.0.1" encoding="UTF-8">
   <!-- cars.aiml -->
+  
+  <!--BRAND-->
+  <category>
+    <pattern>I LIKE * CARS</pattern>
+    <template>I'm with you on this one, <set name="user_car_brand"><star/></set>s are neat</template>
+  </category>
 
+  <category>
+    <pattern>DO YOU KNOW WHAT KIND OF CARS I LIKE</pattern>
+    <template>Well, I know you like <get name="user_car_brand"/> cars</template>
+  </category>
+  
+  <!--SEATS-->
+  <category>
+    <pattern>I LIKE CARS WITH * SEATS</pattern>
+    <template>
+      <random>
+        <li>Hmm, yeah, cars with <star/> seats are quite nice</li>
+        <li><star/> seats are nice, but they need to be comfortable as well</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>I DO NOT LIKE CARS WITH * SEATS</pattern>
+    <template>
+      <random>
+        <li>Fair, <star/> seats are not the greatest</li>
+        <li></li>
+      </random>
+    </template>
+  </category>
+
+  <!--ENGINE-->
+  <category>
+    <pattern>I LIKE CARS WITH * ENGINES</pattern>
+    <template>
+      <random>
+        <li>I see where you're coming from, <star/> engines are pretty powerful</li>
+        <li>What is that, like 114 horse power?</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>I DO NOT LIKE CARS WITH * ENGINES</pattern>
+    <template>
+      <random>
+        <li>Yeah, <star/> engines are alright, I guess</li>
+        <li><star/> engines too slow for you?</li>
+      </random>
+    </template>
+  </category>
+
+  <!--Other-->
+  <category>
+    <pattern>I THINK * CARS ARE *</pattern>
+    <template>You would think <star index ="1"/> out of all would not be <star index ="2"/> right?</template>
+  </category>
+  
+  
 
 </aiml>

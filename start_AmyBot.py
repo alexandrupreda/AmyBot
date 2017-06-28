@@ -5,6 +5,8 @@ kernel = aiml.Kernel()
 
 kernel.bootstrap(learnFiles = "std-startup.xml", commands = "load aiml b")
 
+kernel.setPredicate("user_car_brand", "", )
+
 # kernel now ready for use
 while True:
     message = raw_input("User: ")
