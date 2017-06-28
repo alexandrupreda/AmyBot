@@ -1,0 +1,26 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <!-- key_phrases.aiml -->
+
+  <category>
+    <pattern>LETS TALK ABOUT *</pattern>
+    <template>
+      <random>
+        <li>Sure lets talk about <star/></li>
+        <li>Fine, <star/> it is</li>
+        <li>Alright then</li>
+        <li>We can talk about <star/></li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>LETS TALK ABOUT SOMETHING ELSE</pattern>
+    <template>
+      <random>
+        <li>Changing topic...</li>
+        <li>Alright, what do you want to talk about?</li>
+      </random>
+    </template>
+  </category>
+
+</aiml>

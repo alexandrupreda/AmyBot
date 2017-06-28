@@ -1,0 +1,31 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <!-- hello.aiml -->
+
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+      <random>
+        <li>Well, hello!</li>
+        <li>Hi there!</li>
+        <li>Hey!</li>
+        <li>Greetings earthling</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HI</pattern>
+    <template>
+      <srai>HELLO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HEY</pattern>
+    <template>
+      <srai>HELLO</srai>
+    </template>
+  </category>
+
+
+</aiml>
