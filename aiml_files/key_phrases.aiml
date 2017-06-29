@@ -2,19 +2,36 @@
   <!-- key_phrases.aiml -->
 
   <category>
-    <pattern>LETS TALK ABOUT *</pattern>
+    <pattern>LETS DISCUSS *</pattern>
     <template>
-      <random>
-        <li>Sure lets talk about <star/></li>
-        <li>Fine, <star/> it is</li>
-        <li>Alright then</li>
-        <li>We can talk about <star/></li>
-      </random>
+      <srai>LETS TALK ABOUT <star/></srai>
     </template>
   </category>
 
   <category>
-    <pattern>* LETS TALK ABOUT *</pattern>
+    <pattern>_ LETS DISCUSS *</pattern>
+    <template>
+      <srai>LETS TALK ABOUT <star index="2"/>
+      </srai>
+    </template>
+  </category>
+  
+  <!--KEY PHRASE: Lets talk about...-->
+  <category>
+    <pattern>LETS TALK ABOUT *</pattern>
+    <template>
+      <random>
+        <li>Sure lets talk about <set name = "topic"><star/></set></li>
+        <li>Fine, <set name = "topic"><star/></set> it is</li>
+        <li>Alright then, what about <set name = "topic"><star/></set></li>
+        <li>We can talk about <set name = "topic"><star/></set></li>
+      </random>
+    </template>
+  </category>
+  <!--___________________________________-->
+  
+  <category>
+    <pattern>_ LETS TALK ABOUT *</pattern>
     <template>
       <srai>LETS TALK ABOUT <star index ="2"/></srai>
     </template>
@@ -29,5 +46,23 @@
       </random>
     </template>
   </category>
+
+  <category>
+    <pattern>TOPIC OF CONVERSATION</pattern>
+    <template>
+      <srai>WHAT WERE WE TALKING ABOUT</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>WHAT WERE WE TALKING ABOUT</pattern>
+    <template>
+      <random>
+        <li>I think we were talking about <get name="topic"/></li>
+        <li>You were saying something about <get name="topic"/></li>
+      </random>
+    </template>
+  </category>
+
 
 </aiml>

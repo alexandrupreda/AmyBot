@@ -1,0 +1,14 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <!-- hello.aiml -->
+
+  <category>
+    <pattern>MY NAME IS *</pattern>
+    <template>
+      <random>
+        <li>Nice to meet you <set name="user_name"><star/></set></li>
+        <li>Got it, from now on I will call you Jedi Master... I mean <set name="user_name"><star/></set> </li>
+      </random>
+    </template>
+  </category>
+
+</aiml>

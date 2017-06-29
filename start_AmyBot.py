@@ -5,7 +5,14 @@ kernel = aiml.Kernel()
 
 kernel.bootstrap(learnFiles = "std-startup.xml", commands = "load aiml b")
 
-kernel.setPredicate("user_car_brand", "", )
+kernel.setPredicate("amy_name", "AmyBot")
+kernel.setPredicate("amy_short","Amy")
+kernel.setPredicate("creator", "Alexandru Preda")
+kernel.setPredicate("location", "Uni of Essex, in Colchester")
+
+#kernel.setPredicate("bot_car_brand", "Tesla")
+#kernel.setPredicate("bot_favorite_weather", "chilly")
+
 
 # kernel now ready for use
 while True:

@@ -2,6 +2,23 @@
   <!-- hello.aiml -->
 
   <category>
+      <pattern>BYE</pattern>
+      <template>
+        <random>
+          <li>Good Bye</li>
+          <li>Later <get name="user_name"/></li>
+        </random>
+      </template>
+   </category>
+   
+   <category>
+      <pattern>BYE *</pattern>
+      <template>
+         <srai>BYE</srai>
+      </template>
+   </category>
+    
+  <category>
     <pattern>HELLO</pattern>
     <template>
       <random>
@@ -12,14 +29,7 @@
       </random>
     </template>
   </category>
-
-  <category>
-    <pattern>HI</pattern>
-    <template>
-      <srai>HELLO</srai>
-    </template>
-  </category>
-
+  
   <category>
     <pattern>HEY</pattern>
     <template>
@@ -27,5 +37,40 @@
     </template>
   </category>
 
+  <category>
+    <pattern>HI</pattern>
+    <template>
+      <srai>HELLO</srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>WHAT IS UP</pattern>
+    <template>All good, all good</template>
+  </category>
+  
+  <category>
+    <pattern>GOOD MORNING</pattern>
+    <template>
+      <random>
+        <li>Mornin' <get name="user_name"/></li>
+        <li>Good morning to you as well</li>
+      </random>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>MORNING</pattern>
+    <template>
+      <srai>GOOD MORNING</srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>GOOD AFTERNOON</pattern>
+    <template>
+      <srai>HELLO</srai>
+    </template>
+  </category>
 
 </aiml>

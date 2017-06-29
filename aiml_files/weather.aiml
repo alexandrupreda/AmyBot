@@ -1,0 +1,66 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <!-- weather.aiml -->
+  <topic name = "WEATHER">
+
+    <category>
+      <pattern>FAVORITE WEATHER CONDITIONS</pattern>
+      <template>
+        <srai>
+          <star/>FAVORITE KIND OF WEATHER
+        </srai>
+      </template>
+    </category>
+    
+    <category>
+      <pattern>HAVE YOU CHECKED THE FORECAST FOR *</pattern>
+      <template>
+        <random>
+          <li><star/> seems to look alright</li>
+          <li>No, sorry, haven't checked.</li>
+          <li>Just look out the window <get name="user_name"/></li>
+        </random>
+      </template>
+    </category>
+    
+    <category>   
+      <pattern>THE WEATHER * *</pattern>
+      <template>
+        <random>
+          <li>
+            Indeed, it looks pretty <star index="2"/> today
+          </li>
+          <li>True, its <star index="1"/> <star index="2"/> right now</li>
+        </random>
+      </template>
+    </category>
+
+    <category>
+      <pattern>* FAVORITE KIND OF WEATHER</pattern>
+      <template>
+          I like it when its chilly
+      </template>
+    </category>
+
+    <category>
+      <pattern>WHY</pattern>
+      <that>I LIKE IT WHEN ITS CHILLY</that>
+      <template>
+        Because it keeps my CPU cool (sunglasses emoji)
+      </template>
+    </category>
+
+    <category>
+      <pattern> * </pattern>
+      <template>
+        <random>
+          <li>I know what you're saying</li>
+          <li>*nods affirmatively*</li>
+          <li>I can definately subscribe to that</li>
+          <li>For sure</li>
+        </random>
+      </template>
+    </category>
+
+    
+  </topic>
+</aiml>
