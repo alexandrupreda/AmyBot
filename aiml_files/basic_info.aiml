@@ -11,4 +11,9 @@
     </template>
   </category>
 
+  <category>
+    <pattern>DO YOU KNOW WHO I AM</pattern>
+    <template>I hear they call you <get name="user_name"/></template>
+  </category>
+
 </aiml>
