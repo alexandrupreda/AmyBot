@@ -31,15 +31,28 @@
       </srai>
     </template>
   </category>
-  
-  <!--___________________________________-->
-  
+
   <category>
     <pattern>* LETS TALK ABOUT *</pattern>
     <template>
-      <srai>LETS TALK ABOUT <star index ="2"/></srai>
+      <srai>
+        LETS TALK ABOUT <star index ="2"/>
+      </srai>
     </template>
   </category>
+
+  <category>
+    <pattern>LETS TALK *</pattern>
+    <template>
+      <srai>
+        LETS TALK ABOUT <star/>
+      </srai>
+    </template>
+  </category>
+  
+  <!--___________________________________-->
+  
+  
   
   
   <category>
@@ -73,7 +86,10 @@
     </template>
   </category>
 
-  
+  <category>
+    <pattern>WAKE UP</pattern>
+    <template>I'm here, I'm here</template>
+  </category>
 
 
 </aiml>

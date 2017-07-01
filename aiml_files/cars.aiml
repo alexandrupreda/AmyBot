@@ -8,7 +8,7 @@
     <pattern>BUY A CAR</pattern>
     <template>
       <random>
-        <li>What car brand do you want to get?</li>
+        <li>Which car brand do you want to get?</li>
         <li>Have you though of which car brand do you want to get?</li>
       </random>
     </template>
@@ -54,7 +54,7 @@
       <that>* CAR BRAND DO YOU WANT TO GET</that>
       <template>
         <random>
-          <li><star index="2"/> sounds nice, if you think it serves your needs</li>
+          <li><star index="2"/> sounds nice, if you think it serves your needs. Have you got the budget for it?</li>
           <li>I don't know about <star index="2"/> cars, I have mixed feelings about them</li>
         </random>
       </template>
@@ -67,8 +67,45 @@
         <srai><star index="1"/> A <star index="2"/></srai>
       </template>
     </category><!--* AN *-->
-    
-    
+
+    <category>
+      <pattern>YES</pattern>
+      <that>* BUDGET FOR IT</that>
+      <template>Alright, alright, that's good. 2 seater or 4 seater?</template>
+    </category>
+
+    <category>
+      <pattern>YES *</pattern>
+      <that>* BUDGET FOR IT</that>
+      <template><srai>YES</srai></template>
+    </category><!--YES *-->
+
+    <category>
+      <pattern>NO</pattern>
+      <that>* BUDGET FOR IT</that>
+      <template>Then don't get it. See, I'm helping you be sensible. You're welcome</template>
+    </category>
+
+    <category>
+      <pattern>NO *</pattern>
+      <that>* BUDGET FOR IT</that>
+      <template><srai>NO</srai></template>
+    </category><!--NO *-->
+
+    <category>
+      <pattern>*</pattern>
+      <that>* MIXED FEELINGS ABOUT THEM</that>
+      <template>I don't know, I just do not think they are reliable.</template>
+    </category>
+
+    <category>
+      <pattern>WHAT ABOUT *</pattern>
+      <that>* I JUST DO NOT THINK THEY ARE RELIABLE</that>
+      <template>
+        I hope you have the budget for it
+        <srai>YES</srai>
+      </template>
+    </category>
 
     <!--BRAND-->
   <category>
@@ -128,6 +165,18 @@
     <template>You would think <star index ="1"/> out of all would not be <star index ="2"/> right?</template>
   </category>
 
+    <category>
+      <pattern>*</pattern>
+      <template>
+        <random>
+          <li>Fine</li>
+          <li>Cool</li>
+          <li>As you say</li>
+          <li>OK</li>
+          <li>I'm not sure I'm following here</li>
+        </random>
+      </template>
+    </category>
 
   </topic>
 
