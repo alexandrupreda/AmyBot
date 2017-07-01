@@ -1,20 +1,5 @@
 <aiml version="1.0.1" encoding="UTF-8">
   <!-- key_phrases.aiml -->
-
-  <category>
-    <pattern>LETS DISCUSS *</pattern>
-    <template>
-      <srai>LETS TALK ABOUT <star/></srai>
-    </template>
-  </category>
-
-  <category>
-    <pattern>_ LETS DISCUSS *</pattern>
-    <template>
-      <srai>LETS TALK ABOUT <star index="2"/>
-      </srai>
-    </template>
-  </category>
   
   <!--KEY PHRASE: Lets talk about...-->
   <category>
@@ -28,14 +13,34 @@
       </random>
     </template>
   </category>
+
+  <category>
+    <pattern>LETS DISCUSS *</pattern>
+    <template>
+      <srai>
+        LETS TALK ABOUT <star/>
+      </srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* LETS DISCUSS *</pattern>
+    <template>
+      <srai>
+        LETS TALK ABOUT <star index="2"/>
+      </srai>
+    </template>
+  </category>
+  
   <!--___________________________________-->
   
   <category>
-    <pattern>_ LETS TALK ABOUT *</pattern>
+    <pattern>* LETS TALK ABOUT *</pattern>
     <template>
       <srai>LETS TALK ABOUT <star index ="2"/></srai>
     </template>
   </category>
+  
   
   <category>
     <pattern>LETS TALK ABOUT SOMETHING ELSE</pattern>
@@ -48,21 +53,27 @@
   </category>
 
   <category>
+    <pattern>WHAT WERE WE TALKING ABOUT</pattern>
+    <template>
+      <random>
+        <li>
+          I think we were talking about <get name="topic"/>
+        </li>
+        <li>
+          You were saying something about <get name="topic"/>
+        </li>
+      </random>
+    </template>
+  </category>
+
+  <category>
     <pattern>TOPIC OF CONVERSATION</pattern>
     <template>
       <srai>WHAT WERE WE TALKING ABOUT</srai>
     </template>
   </category>
 
-  <category>
-    <pattern>WHAT WERE WE TALKING ABOUT</pattern>
-    <template>
-      <random>
-        <li>I think we were talking about <get name="topic"/></li>
-        <li>You were saying something about <get name="topic"/></li>
-      </random>
-    </template>
-  </category>
+  
 
 
 </aiml>

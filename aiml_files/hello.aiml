@@ -7,7 +7,7 @@
       <random>
         <li>Good Bye</li>
         <li>
-          Later <get name="user_name"/>
+          Later, bye bye
         </li>
         <li>Bye now</li>
       </random>
@@ -23,6 +23,13 @@
 
   <category>
     <pattern>* BYE</pattern>
+    <template>
+      <srai>BYE</srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>* BYE *</pattern>
     <template>
       <srai>BYE</srai>
     </template>
@@ -139,7 +146,7 @@
       So, my name is AmyBot, but friends call me Amy.
       I was created by Alexandru Preda as part of his MSc dissertation.
       I'm here to chat with you about stuff and things (nothing too complex through, my knowledge is limited).
-      If you've got a topic in mind just say "Lets talk about ..." .Otherwise, just say TIPS and I'll help you out.
+      If you've got a topic in mind just say "Lets talk about ...". Otherwise, just say 'tips' and I'll help you out.
       Lastly, please report any problems to my creator, I thrive to be the best, AROUUUUND, nothing's gonna ever keep me down
     </template>
   </category>
@@ -167,7 +174,6 @@
       <srai>YES</srai>
     </template>
   </category>
-  
   
   <category>
     <pattern>NO</pattern>
@@ -202,7 +208,19 @@
   <category>
     <pattern>*</pattern>
     <that>* KEEP ME DOWN</that>
-    <template>Heh, anyway, where were we...</template>
+    <template>Heh, anyway, where were we... Mind if I ask you a few basic questions?</template>
+  </category>
+
+  <category>
+    <pattern>SURE</pattern>
+    <that>* FEW BASIC QUESTIONS</that>
+    <template>What's your name?</template>
+  </category>
+  
+  <category>
+    <pattern>NO</pattern>
+    <that>* FEW BASIC QUESTIONS</that>
+    <template>Aight</template>
   </category>
 
 </aiml>
