@@ -1,5 +1,25 @@
 <aiml version="1.0.1" encoding="UTF-8">
   <!-- key_phrases.aiml -->
+
+  <category>
+    <pattern>AMY</pattern>
+    <template>
+      <random>
+        <li>I'm here!</li>
+        <li>Yes sir</li>
+        <li>Listening...</li>
+        <li>Awating instructions</li>
+        <li>Yes?</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>AMYBOT</pattern>
+    <template>
+      <srai>AMY!</srai>
+    </template>
+  </category>
   
   <!--KEY PHRASE: Lets talk about...-->
   <category>
@@ -80,6 +100,15 @@
   </category>
 
   <category>
+    <pattern>TIPS</pattern>
+    <template>
+      <random>
+        <li>Say 'Lets talk about...' so we can dive into a topic</li>
+      </random>
+    </template>
+  </category>
+  
+  <category>
     <pattern>TOPIC OF CONVERSATION</pattern>
     <template>
       <srai>WHAT WERE WE TALKING ABOUT</srai>
@@ -91,5 +120,17 @@
     <template>I'm here, I'm here</template>
   </category>
 
+  <category>
+    <pattern>*</pattern>
+    <template>
+      <random>
+        <li><get name="user_name"/> I'm not following</li>
+        <li>Sorry, I didn't get that</li>
+        
+      </random>
+    </template>
+  </category>
+
+  
 
 </aiml>

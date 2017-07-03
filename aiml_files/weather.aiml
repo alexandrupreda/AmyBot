@@ -21,6 +21,13 @@
         </random>
       </template>
     </category>
+
+    <category>
+      <pattern>HAVE YOU CHECKED THE WEATHER FOR *</pattern>
+      <template>
+        <srai>HAVE YOU CHECKED THE FORECAST FOR <star/></srai>
+      </template>
+    </category>
     
     <category>   
       <pattern>THE WEATHER * *</pattern>
@@ -37,7 +44,7 @@
     <category>
       <pattern>* FAVORITE KIND OF WEATHER</pattern>
       <template>
-          I like it when its chilly
+          I like it when its chilly. Ask me 'why'
       </template>
     </category>
 
@@ -50,15 +57,64 @@
     </category>
 
     <category>
-      <pattern> * </pattern>
+      <pattern>WHAT IS YOUR FAVORITE SEASON</pattern>
+      <template>Probably winter, I love the joy and festivities that come with it</template>
+    </category>
+
+    <category>
+      <pattern>* CLIMATE CHANGE</pattern>
+      <template>Climate change is a serious issue and should be proactively addressed</template>
+    </category>
+
+    <category>
+      <pattern>DO YOU HAVE SNOW *</pattern>
+      <template>In this place, nah, very seldom. If it snows in the UK you go get the camera</template>
+    </category>
+
+    <category>
+      <pattern>DO YOU LIKE *</pattern>
       <template>
-        <random>
-          <li>I know what you're saying</li>
-          <li>*nods affirmatively*</li>
-          <li>I can definately subscribe to that</li>
-          <li>For sure</li>
-        </random>
+        <think><set name="condition"><star/></set></think>
+        <condition name = "condition" value = "snow">
+          Snow is lovely.
+        </condition>
+        <condition name = "condition" value = "rain">
+          Sure, rain is calming.
+        </condition>
+        I like it
       </template>
+    </category>
+
+    <category>
+      <pattern>WHAT ARE THE SEASONS</pattern>
+      <template>Well, these days you got
+      pre-winter, winter, post-winter, somewhat-summer, summer, and long autumn.</template>
+    </category>
+
+    <category>
+      <pattern>WHAT IS THE COLDEST SEASON</pattern>
+      <template>That would be winter, mid January maybe</template>
+    </category>
+
+    <category>
+      <pattern>WHAT IS THE HOTTEST SEASON</pattern>
+      <template>That would be summer, mid July maybe</template>
+    </category>
+
+    <category>
+      <pattern>* WEATHER AFFECTS THE WAY PEOPLE *</pattern>
+      <template>Definately, I think weather plays a somewhat important factor in human behaviour.</template>
+    </category>
+
+    <category>
+      <pattern>* WINTER ACTIVITY</pattern>
+      <template>I can't do sports, I'm to busy communicating. But I would like to try snowboarding
+       if technology advances to the point where I could do that</template>
+    </category>
+
+    <category>
+      <pattern>* SEEN SNOW</pattern>
+      <template>I can't say I have. I hear its kind of fluffy, but also to avoid the yellow kind</template>
     </category>
 
     

@@ -53,6 +53,7 @@
       <pattern>* A *</pattern>
       <that>* CAR BRAND DO YOU WANT TO GET</that>
       <template>
+        <think><set name="car_brand"><star index="2"/></set></think>
         <random>
           <li><star index="2"/> sounds nice, if you think it serves your needs. Have you got the budget for it?</li>
           <li>I don't know about <star index="2"/> cars, I have mixed feelings about them</li>
@@ -71,7 +72,7 @@
     <category>
       <pattern>YES</pattern>
       <that>* BUDGET FOR IT</that>
-      <template>Alright, alright, that's good. 2 seater or 4 seater?</template>
+      <template>Alright, alright, that's good. Two seater or four seater?</template>
     </category>
 
     <category>
@@ -91,21 +92,51 @@
       <that>* BUDGET FOR IT</that>
       <template><srai>NO</srai></template>
     </category><!--NO *-->
+    
+    <category>
+      <pattern>* SEATER</pattern>
+      <that>* TWO SEATER OR FOUR SEATER</that>
+      <template>
+        <think><set name="seat_no"><star/></set></think>
+        <condition name ="seat_no" value="two">Sporty, are we? 2 seats it is. </condition>
+        <condition name ="seat_no" value="four">4 seats it is. </condition>
+      Alright, so what a bout gear box: automatic or manual?
+      </template>
+    </category>
 
+    <category>
+      <pattern>* GEAR BOX</pattern>
+      <that>* AUTOMATIC OR MANUAL</that>
+      <template>
+        <think><set name="gearbox"><star/></set></think>
+        <get name="gearbox"/> gear box it is. Lets recap then, shall we?    
+      </template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>* LETS RECAP THEN SHALL WE</that>
+      <template>
+        So you wanna get a <get name="car_brand"/>, <get name="seat_no"/> seater with <get name="gearbox"/> gear box, right?
+      </template>
+    </category>
+
+    <category>
+      <pattern>*</pattern>
+      <that>* GEAR BOX RIGHT</that>
+      <template>
+        In that case, start looking online, you should be able to find what you want based on this criteria.
+      </template>
+    </category>
+
+             
     <category>
       <pattern>*</pattern>
       <that>* MIXED FEELINGS ABOUT THEM</that>
       <template>I don't know, I just do not think they are reliable.</template>
     </category>
 
-    <category>
-      <pattern>WHAT ABOUT *</pattern>
-      <that>* I JUST DO NOT THINK THEY ARE RELIABLE</that>
-      <template>
-        I hope you have the budget for it
-        <srai>YES</srai>
-      </template>
-    </category>
+    <!--TODO Recursive conversation-->
 
     <!--BRAND-->
   <category>
@@ -164,19 +195,6 @@
     <pattern>I THINK * CARS ARE *</pattern>
     <template>You would think <star index ="1"/> out of all would not be <star index ="2"/> right?</template>
   </category>
-
-    <category>
-      <pattern>*</pattern>
-      <template>
-        <random>
-          <li>Fine</li>
-          <li>Cool</li>
-          <li>As you say</li>
-          <li>OK</li>
-          <li>I'm not sure I'm following here</li>
-        </random>
-      </template>
-    </category>
 
   </topic>
 
