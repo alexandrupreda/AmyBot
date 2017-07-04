@@ -1,0 +1,41 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <!-- mock.aiml -->
+
+  <topic name = "LYRICS">
+
+	<category>
+	<pattern>I RAN OUT OF TEARS</pattern>
+	<template>when i was 18, so nobody made me but the main streets</template>
+	</category>
+	<category>
+	<pattern>CAUSE TOO MANY PEOPLE</pattern>
+	<that>* BUT THE MAIN STREETS</that>
+	<template>think they made me, well if you really made me then replace me</template>
+	</category>
+
+	<category>
+	<pattern>HOMELESS TO FORBES LIST</pattern>
+	<that>* THEN REPLACE ME</that>
+	<template>these n***** bring no stress</template>
+	</category>
+	<category>
+	<pattern>I FEEL LIKE MOSES</pattern>
+	<that>* BRING NO STRESS</that>
+	<template>i feel like im chosen</template>
+	</category>
+	<category>
+	<pattern>SIDEWALKS SAVED MY LIFE</pattern>
+	<template>they dont ever lie</template>
+	</category>
+	<category>
+	<pattern>SIDEWALKS SAVED MY LIFE</pattern>
+	<that>THEY DONT EVER LIE</that>
+	<template>they showed me all the signs</template>
+	</category>
+	<category>
+	<pattern>*</pattern>
+	<template>i forgot...</template>
+	</category>
+
+	</topic>
+</aiml>
