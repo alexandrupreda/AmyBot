@@ -36,6 +36,16 @@
 	<pattern>*</pattern>
 	<template>i forgot...</template>
 	</category>
+
+	<category>
+	<pattern>CAUSE WERE HOT LIKE HELL</pattern>
+	<template>does it burn when im not there</template>
+	</category>
+	<category>
+	<pattern>WHEN YOURE BY YOURSELF</pattern>
+	<that>* BURN WHEN IM NOT THERE</that>
+	<template>am i the answer to your prayers</template>
+	</category>
 
 	</topic>
 </aiml>
