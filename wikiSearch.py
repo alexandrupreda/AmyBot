@@ -57,8 +57,8 @@ def writeToWikipediaResultsFile(entry, wikiPage,noOfSentences):
     stringToAdd += wikipedia.summary(wikiPage.title, sentences=noOfSentences-1)
     stringToAdd += "</template>" + "\n\t</category>" + "\n</aiml>"
 
-    stringToAdd = stringToAdd.encode('ascii', 'ignore').decode('ascii')
-    stringToAdd = str(stringToAdd)
+    #cleanup
+    stringToAdd = textCleanUp(stringToAdd)
 
     commands.deleteLastLineFromFile(filename)
     fileToWrite = open(filename, "a")
@@ -102,3 +102,11 @@ def yesAnswer(prompt):
 def errorMessage():
     print "Something malfunctioned... apologies for that"
     return
+
+
+def textCleanUp(text):
+    text = text.encode('ascii', 'ignore').decode('ascii')
+    text = str(text)
+    # check for illegal AIML characters
+    text = text.replace("&"," and ")
+    return text

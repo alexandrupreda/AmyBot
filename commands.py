@@ -1,6 +1,8 @@
 import os
 import sys
 import wikiSearch
+import traceback
+
 
 currentFile = os.path.basename(sys.argv[0])
 console = "CONSOLE(" + currentFile + "): "
@@ -83,4 +85,7 @@ def interestedInCommand(message):
             characters += len("in") + 1
             break
     term = message[characters:]
-    wikiSearch.wiki(term)
+    try:
+        wikiSearch.wiki(term)
+    except:
+        traceback.print_exc()
