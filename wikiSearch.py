@@ -30,26 +30,31 @@ def wiki(entry):
     summary = wikiPage.summary
     summaryList = tokenize.sent_tokenize(summary)
     while counter < len(summaryList):
-        print summaryList[counter]
-        counter += 1
-        if counter % 2 == 0:
+        if counter % 2 == 0 and counter != 0:
             prompt = raw_input("\nMore?(yes/no): ")
             if noAnswer(prompt):
+                print "That's it then"
                 break
+        print summaryList[counter]
+        counter += 1
 
-    prompt = raw_input("Do you want me to write this down for later?(yes/no): ")
+    prompt = raw_input("\nDo you want me to write this down for later?(yes/no): ")
     if yesAnswer(prompt):
-        writeToWikipediaResultsFile(entry, wikiPage)
+        noOfSentences = 5
+        if noOfSentences > len(summaryList):
+            noOfSentences = len(summaryList)
+        writeToWikipediaResultsFile(entry, wikiPage, noOfSentences)
 
 
-def writeToWikipediaResultsFile(entry, wikiPage):
+def writeToWikipediaResultsFile(entry, wikiPage,noOfSentences):
     filename = "aiml_files\\wikipedia_results.aiml"
     stringToAdd = "\n\t<category>"
     stringToAdd += "\n\t<pattern>"
     stringToAdd += "IM INTERESTED IN " + entry.upper()
     stringToAdd += "</pattern>"
     stringToAdd += "\n\t<template>"
-    stringToAdd += wikipedia.summary(wikiPage.title, sentences=5)
+    # it's speculated that count begins from 0
+    stringToAdd += wikipedia.summary(wikiPage.title, sentences=noOfSentences-1)
     stringToAdd += "</template>" + "\n\t</category>" + "\n</aiml>"
 
     stringToAdd = stringToAdd.encode('ascii', 'ignore').decode('ascii')
@@ -71,7 +76,10 @@ def wikiSearch(entry):
     prompt = raw_input("\nwhich result? ")
     if prompt == "none" or prompt == "cancel":
         return None
-    return wikipedia.page(prompt)
+    try:
+        return wikipedia.page(prompt)
+    except:
+        errorMessage()
 
 
 def wikiName(entry):
@@ -90,3 +98,7 @@ def yesAnswer(prompt):
         return True
     else:
         return False
+
+def errorMessage():
+    print "Something malfunctioned... apologies for that"
+    return
