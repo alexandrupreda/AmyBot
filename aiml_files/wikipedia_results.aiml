@@ -36,5 +36,10 @@ Kehlani is originally from Oakland, California where she achieved initial fame a
 	<category>
 	<pattern>IM INTERESTED IN SIDEWALKS BY THE WEEKND</pattern>
 	<template>"Sidewalks" is a song by Canadian singer The Weeknd, featuring American rapper Kendrick Lamar, from his third studio album Starboy (2016). The song was written by Abel Tesfaye, Martin McKinney, Daniel Wilson, Robert John Richardson, Kendrick Lamar Duckworth and Ali Shaheed Jones-Muhummad, being produced by Doc McKinney, Bobby Raps and Ali Shaheed Muhammad. It was one of the tracks off Starboy to be featured in the short film Mania.</template>
+	</category>
+	<category>
+	<pattern>IM INTERESTED IN RIHANNA</pattern>
+	<template>Robyn Rihanna Fenty (; born February 20, 1988) is a Barbadian singer, songwriter, and actress. Born in Saint Michael and raised in Bridgetown, she first entered the music industry by recording demo tapes under the direction of record producer Evan Rogers in 2003. She ultimately signed a recording contract with Def Jam Recordings after auditioning for its then-president, hip hop producer and rapper Jay Z. In 2005, Rihanna rose to fame with the release of her debut studio album Music of the Sun and its follow-up A Girl like Me (2006), which charted on the top 10 of the US Billboard 200 and respectively produced the singles "Pon de Replay" and "SOS".
+She assumed creative control for her third studio album Good Girl Gone Bad (2007) and adopted a public image as a sex symbol while reinventing her music.</template>
 	</category>
 </aiml>
