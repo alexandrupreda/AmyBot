@@ -11,9 +11,9 @@ def checkUserInputForAction(message):
     if checkForLearnKeyPhrase(message):
         commands.learnCommand()
         return True
-    if checkForInterestedKeyPhrase(message):
-        commands.interestedInCommand(message)
-        return True
+    # if checkForInterestedKeyPhrase(message):
+    #     commands.interestedInCommand(message)
+    #     return True
     return False
 
 
@@ -23,7 +23,7 @@ def checkForLearnKeyPhrase(message):
         return True
 
 
-def checkForInterestedKeyPhrase(message):
-    if "interested in" in message.lower():
-        print(console + "\'interested in\' command detected...")
-        return True
+# def checkForInterestedKeyPhrase(message):
+#     if "interested in" in message.lower():
+#         print(console + "\'interested in\' command detected...")
+#         return True

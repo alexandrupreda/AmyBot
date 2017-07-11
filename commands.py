@@ -1,5 +1,6 @@
 import os
 import sys
+import wikiSearch
 
 currentFile = os.path.basename(sys.argv[0])
 console = "CONSOLE(" + currentFile + "): "
@@ -12,8 +13,7 @@ def learnCommand():
     fileName = "aiml_files\\" + fileName + ".aiml"
     print console + "Accessing " + fileName + "..."
 
-    deleteLastLineFromFile(fileName)
-    deleteLastLineFromFile(fileName)
+
     stringToAdd = ""
 
     while True:
@@ -37,9 +37,11 @@ def learnCommand():
 
     stringToAdd += "\n\n\t</topic>" + "\n</aiml>"
 
-    file = open(fileName, "a")
-    file.write(stringToAdd)
-    file.close()
+    deleteLastLineFromFile(fileName)
+    deleteLastLineFromFile(fileName)
+    fileToWrite = open(fileName, "a")
+    fileToWrite.write(stringToAdd)
+    fileToWrite.close()
 
     print console + "End of \'learn\' function"
 
@@ -76,13 +78,9 @@ def interestedInCommand(message):
     message=message.lower()
     characters = 0
     for word in message.split():
-        print word
         characters += len(word) + 1
-        print characters
         if word == "interested":
             characters += len("in") + 1
             break
-    print characters
     term = message[characters:]
-    print "Searching for " + term
-    # TODO: Continue writing this function
+    wikiSearch.wiki(term)

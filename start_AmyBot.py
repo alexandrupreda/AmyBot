@@ -4,19 +4,19 @@ import sys
 
 import input_check
 import output_check
-from autocorrect import spell
+# from autocorrect import spell
 
 currentFile = os.path.basename(sys.argv[0])
 console = "CONSOLE(" + currentFile + "): "
 lib = "std-startup.xml"
 
 #Spell checker
-def spellChecker(message):
-    new_message = ""
-    for word in message.split():
-        word = spell(word)
-        new_message = new_message + word + " "
-    return new_message
+# def spellChecker(message):
+#     new_message = ""
+#     for word in message.split():
+#         word = spell(word)
+#         new_message = new_message + word + " "
+#     return new_message
 
 kernel = aiml.Kernel()
 kernel.bootstrap(learnFiles = lib, commands = "load aiml b")
@@ -28,7 +28,7 @@ kernel.setPredicate("creator", "Alexandru Preda")
 print console + "AmyBot is operational..."
 while True:
     user_message = raw_input("User: ")
-    new_user_message = spellChecker(user_message)
+    # user_message = spellChecker(user_message)
     specialKeyword = input_check.checkUserInputForAction(user_message)
 
     #if pecial command identified
@@ -37,10 +37,11 @@ while True:
         # kernel.bootstrap(learnFiles=lib, commands="load aiml b")
         continue
 
-    bot_response = kernel.respond(new_user_message)
+    bot_response = kernel.respond(user_message)
     print "AmyBot: " + bot_response
     # Do something with bot_response
-    output_check.checkResponseForAction(bot_response.lower())
+    if output_check.checkBotResponseForAction(bot_response.lower(), user_message):
+        kernel.bootstrap(learnFiles=lib, commands="load aiml b")
 
 
 
