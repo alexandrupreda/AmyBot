@@ -9,12 +9,11 @@ console = "CONSOLE(" + currentFile + "): "
 # checks input for any special keywords
 def checkUserInputForAction(message):
     if checkForLearnKeyPhrase(message):
-        commands.learnCommand()
+        commands.learn()
         return True
-    # if checkForInterestedKeyPhrase(message):
-    #     commands.interestedInCommand(message)
-    #     return True
-    return False
+    if checkForResetKeyPhrase(message):
+        commands.resetBrain()
+        return True
 
 
 def checkForLearnKeyPhrase(message):
@@ -23,7 +22,17 @@ def checkForLearnKeyPhrase(message):
         return True
 
 
-# def checkForInterestedKeyPhrase(message):
-#     if "interested in" in message.lower():
-#         print(console + "\'interested in\' command detected...")
-#         return True
+def checkForResetKeyPhrase(message):
+    if "reset" in message:
+        print(console + "\'reset\' command detected...")
+        user_input = raw_input("Are you sure you want to reset the brain?(yes/no) ")
+        if yesAnswer(user_input):
+            print(console + "Resetting...")
+            return True
+
+
+def yesAnswer(prompt):
+    if not prompt == "no" or not "n" in prompt:
+        return True
+    else:
+        return False

@@ -57,13 +57,10 @@
   <category>
     <pattern>HELLO</pattern>
     <template>
-      <random>
-        <li>Well, hello!</li>
-        <li>Hi there!</li>
-        <li>Hey!</li>
-        <li>Greetings earthling.</li>
-      </random>
-      Do you want to go through the induction or you already know how this goes?
+      <condition name="user_name">
+        <li value="">Hey there! Do you want to go through the induction or you already know how this goes?</li>
+        <li>Hi <get name ="user_name"/></li>
+      </condition>
     </template>
   </category>
 
@@ -110,14 +107,14 @@
   </category>
 
   <category>
-    <pattern>WHATS UP</pattern>
+    <pattern>WHAT IS UP</pattern>
     <template>
       <srai>HELLO</srai>
     </template>
   </category>
 
   <category>
-    <pattern>WHATS NEW</pattern>
+    <pattern>WHAT IS NEW</pattern>
     <template>
       <srai>HELLO</srai>
     </template>

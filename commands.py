@@ -7,8 +7,16 @@ import traceback
 currentFile = os.path.basename(sys.argv[0])
 console = "CONSOLE(" + currentFile + "): "
 
-#learn commands
-def learnCommand():
+
+
+def resetBrain():
+    os.remove("bot_brain.brn")
+    print(console + "Done. Goodbye!")
+    exit()
+
+
+# learn commands
+def learn():
     print(console +"This is a developer option. PROCEED WITH CARE!")
 
     fileName = raw_input(console +"File name: ")
@@ -89,3 +97,5 @@ def interestedInCommand(message):
         wikiSearch.wiki(term)
     except:
         traceback.print_exc()
+
+

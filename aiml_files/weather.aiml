@@ -42,7 +42,7 @@
     </category>
 
     <category>
-      <pattern>* FAVORITE KIND OF WEATHER</pattern>
+      <pattern>* FAVORITE SEASON</pattern>
       <template>
           I like it when its chilly. Ask me 'why'
       </template>
@@ -50,15 +50,10 @@
 
     <category>
       <pattern>WHY</pattern>
-      <that>I LIKE IT WHEN ITS CHILLY</that>
+      <that>I LIKE IT WHEN ITS CHILLY *</that>
       <template>
         Because it keeps my CPU cool (sunglasses emoji)
       </template>
-    </category>
-
-    <category>
-      <pattern>WHAT IS YOUR FAVORITE SEASON</pattern>
-      <template>Probably winter, I love the joy and festivities that come with it</template>
     </category>
 
     <category>

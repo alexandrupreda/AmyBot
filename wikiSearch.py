@@ -99,6 +99,7 @@ def yesAnswer(prompt):
     else:
         return False
 
+
 def errorMessage():
     print "Something malfunctioned... apologies for that"
     return
@@ -108,5 +109,5 @@ def textCleanUp(text):
     text = text.encode('ascii', 'ignore').decode('ascii')
     text = str(text)
     # check for illegal AIML characters
-    text = text.replace("&"," and ")
+    text = text.replace("&", " and ")
     return text

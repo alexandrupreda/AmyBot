@@ -98,9 +98,13 @@
       <that>* TWO SEATER OR FOUR SEATER</that>
       <template>
         <think><set name="seat_no"><star/></set></think>
-        <condition name ="seat_no" value="two">Sporty, are we? 2 seats it is. </condition>
-        <condition name ="seat_no" value="four">4 seats it is. </condition>
-      Alright, so what a bout gear box: automatic or manual?
+        <condition name ="seat_no">
+          <li value ="two">Sporty, are we? 2 seats it is. </li>
+          <li value ="four">4 seats it is.</li>
+          <li>
+            <srai><star/> SEATER</srai>
+          </li>
+        </condition>      
       </template>
     </category>
 
@@ -134,6 +138,13 @@
       <pattern>*</pattern>
       <that>* MIXED FEELINGS ABOUT THEM</that>
       <template>I don't know, I just do not think they are reliable.</template>
+    </category>
+
+    <category>
+      <pattern>WHAT ABOUT *</pattern>
+      <template>
+        <srai>BUY A CAr</srai>
+      </template>
     </category>
 
     <!--TODO Recursive conversation-->

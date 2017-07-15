@@ -125,8 +125,7 @@
     <template>
       <random>
         <li><get name="user_name"/> I'm not following</li>
-        <li>Sorry, I didn't get that</li>
-        
+        <li>Sorry, I didn't get that</li>      
       </random>
     </template>
   </category>
