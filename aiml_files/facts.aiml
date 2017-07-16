@@ -1,0 +1,25 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <!-- mock.aiml -->
+
+  <topic name = "FACTS">
+
+	<category>
+	<pattern>WHAT COLOUR IS THE SKY</pattern>
+	<template>the sky is blue</template>
+	</category>
+	<category>
+	<pattern>WHAT IS PYTHON</pattern>
+	<template>Python is the programming language I was written in</template>
+	</category>
+
+	<category>
+	<pattern>WHAT COLOUR ARE THE ELEPHANTS</pattern>
+	<template>elephants are grey</template>
+	</category>
+	<category>
+	<pattern>WHAT T SHIRT AM I WEARING</pattern>
+	<template>I am wearing a white T shirt</template>
+	</category>
+
+	</topic>
+</aiml>
