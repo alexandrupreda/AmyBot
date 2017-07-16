@@ -1,12 +1,12 @@
 <aiml version="1.0.1" encoding="UTF-8">
   <!-- weather.aiml -->
-  <topic name = "WEATHER">
+  <topic name = "THE WEATHER">
 
     <category>
       <pattern>FAVORITE WEATHER CONDITIONS</pattern>
       <template>
         <srai>
-          <star/>FAVORITE KIND OF WEATHER
+          <star/>FAVORITE SEASON
         </srai>
       </template>
     </category>
@@ -45,6 +45,13 @@
       <pattern>* FAVORITE SEASON</pattern>
       <template>
           I like it when its chilly. Ask me 'why'
+      </template>
+    </category>
+
+    <category>
+      <pattern>* FAVOURITE SEASON</pattern>
+      <template>
+          <srai><star/> FAVORITE SEASON</srai>
       </template>
     </category>
 

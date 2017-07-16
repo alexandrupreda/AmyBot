@@ -23,7 +23,7 @@
   
   <!--KEY PHRASE: Lets talk about...-->
   <category>
-    <pattern>LETS TALK ABOUT *</pattern>
+    <pattern>LET US TALK ABOUT *</pattern>
     <template>
       <random>
         <li>Sure lets talk about <set name = "topic"><star/></set></li>
@@ -35,7 +35,7 @@
   </category>
 
   <category>
-    <pattern>LETS DISCUSS *</pattern>
+    <pattern>LET US DISCUSS *</pattern>
     <template>
       <srai>
         LETS TALK ABOUT <star/>
@@ -44,7 +44,7 @@
   </category>
 
   <category>
-    <pattern>* LETS DISCUSS *</pattern>
+    <pattern>* LET US DISCUSS *</pattern>
     <template>
       <srai>
         LETS TALK ABOUT <star index="2"/>
@@ -53,7 +53,7 @@
   </category>
 
   <category>
-    <pattern>* LETS TALK ABOUT *</pattern>
+    <pattern>* LET US TALK ABOUT *</pattern>
     <template>
       <srai>
         LETS TALK ABOUT <star index ="2"/>
@@ -62,7 +62,7 @@
   </category>
 
   <category>
-    <pattern>LETS TALK *</pattern>
+    <pattern>LET US TALK *</pattern>
     <template>
       <srai>
         LETS TALK ABOUT <star/>
@@ -76,7 +76,7 @@
   
   
   <category>
-    <pattern>LETS TALK ABOUT SOMETHING ELSE</pattern>
+    <pattern>LET US TALK ABOUT SOMETHING ELSE</pattern>
     <template>
       <random>
         <li>Changing topic...</li>

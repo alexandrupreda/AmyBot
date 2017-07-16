@@ -3,44 +3,47 @@ import wikipedia
 from nltk import tokenize
 
 import commands
+import IO
 
-
-# TODO: CHECK WIKIPEDIA FILE, for BeautifulSoup error
 
 # uses
 # https://stackoverflow.com/questions/9474395/how-to-break-up-a-paragraph-by-sentences-in-python
 # https://github.com/goldsmith/Wikipedia
 def wiki(entry):
-    print "Searching online for " + entry + "..."
-    counter = 1
+    IO.botOutput("Searching online for " + entry + "...")
+    sentenceCounter = 1
     try:
         wikiPage = wikipedia.page(entry)
-        print wikipedia.summary(entry, sentences=1)
-        prompt = raw_input("This one, " + wikiPage.title + "?(yes/no): ")
+        summaryOneSent = wikipedia.summary(entry, sentences=1)
+        summaryOneSent = removeBetweenBrackets(summaryOneSent)
+        IO.botOutput(summaryOneSent)
+        IO.botOutput("Is this " + wikiPage.title + " you were looking for?(yes or no): ")
+        prompt = IO.userInput()
         if noAnswer(prompt):
-            counter = 0
+            sentenceCounter = 0
             wikiPage = wikiSearch(entry)
     except:
         wikiPage = wikiSearch(entry)
 
     if wikiPage is None:
-        print "I'll cancel the search then..."
+        IO.botOutput("I'll cancel the search then...")
         return
-
     summary = wikiPage.summary
     summaryList = tokenize.sent_tokenize(summary)
-    while counter < len(summaryList):
-        if counter % 2 == 0 and counter != 0:
-            prompt = raw_input("\nMore?(yes/no): ")
+    while sentenceCounter < len(summaryList):
+        if sentenceCounter % 2 == 0 and sentenceCounter != 0:
+            IO.botOutput("Would you like more info? (yes or no)")
+            prompt = IO.userInput()
             if noAnswer(prompt):
-                print "That's it then"
+                IO.botOutput("That's it then")
                 break
-        print summaryList[counter]
-        counter += 1
+        IO.botOutput(summaryList[sentenceCounter])
+        sentenceCounter += 1
 
-    prompt = raw_input("\nDo you want me to write this down for later?(yes/no): ")
+    IO.botOutput("Do you want me to write this down for later? (yes or no): ")
+    prompt = IO.userInput()
     if yesAnswer(prompt):
-        noOfSentences = 5
+        noOfSentences = 3
         if noOfSentences > len(summaryList):
             noOfSentences = len(summaryList)
         writeToWikipediaResultsFile(entry, wikiPage, noOfSentences)
@@ -50,7 +53,7 @@ def writeToWikipediaResultsFile(entry, wikiPage,noOfSentences):
     filename = "aiml_files\\wikipedia_results.aiml"
     stringToAdd = "\n\t<category>"
     stringToAdd += "\n\t<pattern>"
-    stringToAdd += "IM INTERESTED IN " + entry.upper()
+    stringToAdd += "* INTERESTED IN " + entry.upper()
     stringToAdd += "</pattern>"
     stringToAdd += "\n\t<template>"
     # it's speculated that count begins from 0
@@ -65,15 +68,16 @@ def writeToWikipediaResultsFile(entry, wikiPage,noOfSentences):
     fileToWrite.write(stringToAdd)
     fileToWrite.close()
 
-    print "Ok, I took note"
+    IO.botOutput("Ok, I took note")
 
 
 def wikiSearch(entry):
     searchResults = wikipedia.search(entry)
-    print "This is what I found..."
+    IO.botOutput("This is what I found...")
     for result in searchResults:
         print result
-    prompt = raw_input("\nwhich result? ")
+    IO.botOutput("\nwhich result? (you can cancel if you want) ")
+    prompt = IO.userInput()
     if prompt == "none" or prompt == "cancel":
         return None
     try:
@@ -101,13 +105,21 @@ def yesAnswer(prompt):
 
 
 def errorMessage():
-    print "Something malfunctioned... apologies for that"
+    IO.botOutput("Something malfunctioned... apologies for that")
     return
 
 
 def textCleanUp(text):
+    text = removeBetweenBrackets(text)
     text = text.encode('ascii', 'ignore').decode('ascii')
     text = str(text)
     # check for illegal AIML characters
     text = text.replace("&", " and ")
+    return text
+
+
+# https://stackoverflow.com/questions/14596884/remove-text-between-and-in-python
+def removeBetweenBrackets(text):
+    import re
+    text = re.sub("[\(\[].*?[\)\]]", "", text)
     return text

@@ -1,10 +1,12 @@
 import aiml
 import os
 import sys
+import time
 
 import input_check
 import output_check
-import preprocessing
+import IO
+
 
 # please check that line 389 in wikipedia.py is as follows: lis = BeautifulSoup(html, 'html.parser').find_all('li')
 # https://github.com/goldsmith/Wikipedia/commit/50bc236836dc20546af61ea7ca6198c3f039a816
@@ -29,25 +31,26 @@ kernel.setPredicate("amy_short", "Amy")
 kernel.setPredicate("creator", "Alexandru Preda")
 
 kernel.setPredicate("user_name", "")
-
+soundNo = 0
 # kernel now ready for use
 print console + "AmyBot is operational..."
 while True:
-    # get the input from the user
-    user_message = raw_input("User: ")
-    # preprocess the input, clean up
-    user_message = preprocessing.init(user_message)
+    # take the input from the user
+    user_message = IO.userInput()
 
     # check if any action occurs based on user input
     specialKeyword = input_check.checkUserInputForAction(user_message)
+
     # if special command identified, skip bot response (AIML)
     if specialKeyword:
         kernel.bootstrap(learnFiles=lib, commands="load aiml b")
         continue
 
     bot_response = kernel.respond(user_message)
-    print "AmyBot: " + bot_response
+    IO.botOutput(bot_response)
+
     # Do something with bot_response
     if output_check.checkBotResponseForAction(bot_response.lower(), user_message):
         kernel.bootstrap(learnFiles=lib, commands="load aiml b")
-    # kernel.saveBrain(brain)
+        # kernel.saveBrain(brain)
+    time.sleep(1)

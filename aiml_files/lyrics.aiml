@@ -3,16 +3,18 @@
 
   <topic name = "LYRICS">
 
-	<category>
+
+	<category>
 	<pattern>I RAN OUT OF TEARS</pattern>
 	<template>when i was 18, so nobody made me but the main streets</template>
 	</category>
 	<category>
-	<pattern>CAUSE TOO MANY PEOPLE</pattern>
+	<pattern>BECAUSE TOO MANY PEOPLE</pattern>
 	<that>* BUT THE MAIN STREETS</that>
 	<template>think they made me, well if you really made me then replace me</template>
 	</category>
-
+
+
 	<category>
 	<pattern>HOMELESS TO FORBES LIST</pattern>
 	<that>* THEN REPLACE ME</that>
@@ -36,7 +38,8 @@
 	<pattern>*</pattern>
 	<template>i forgot...</template>
 	</category>
-
+
+
 	<category>
 	<pattern>CAUSE WERE HOT LIKE HELL</pattern>
 	<template>does it burn when im not there</template>

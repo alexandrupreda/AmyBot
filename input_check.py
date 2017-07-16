@@ -1,6 +1,7 @@
 import sys
 import os
 import commands
+import IO
 
 currentFile = os.path.basename(sys.argv[0])
 console = "CONSOLE(" + currentFile + "): "
@@ -24,8 +25,9 @@ def checkForLearnKeyPhrase(message):
 
 def checkForResetKeyPhrase(message):
     if "reset" in message:
-        print(console + "\'reset\' command detected...")
-        user_input = raw_input("Are you sure you want to reset the brain?(yes/no) ")
+        print console + "\'reset\' command detected..."
+        print console + "Are you sure you want to reset the brain?(yes/no) "
+        user_input = IO.userInput()
         if yesAnswer(user_input):
             print(console + "Resetting...")
             return True

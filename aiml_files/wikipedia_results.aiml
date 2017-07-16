@@ -3,17 +3,8 @@
 <aiml version="1.0.1" encoding="UTF-8">
 
     <category>
-    <pattern>I AM INTERESTED IN *</pattern>
+    <pattern>* INTERESTED IN *</pattern>
     <template>Let me do a web search on this, hold on...</template>
     </category>
-
-	<category>
-	<pattern>IM INTERESTED IN DAVID GUETTA</pattern>
-	<template>Pierre David Guetta (French pronunciation: [david geta]; born 7 November 1967) is a French DJ, songwriter, record producer and remixer. He co-founded Gum Productions with Jean-Charles Carr and Joachim Garraud, and released his first album, Just a Little More Love, in 2002. Later, he released Guetta Blaster (2004) and Pop Life (2007).
-Guetta achieved mainstream success with his 2009 album One Love which included the hit singles "When Love Takes Over", "Gettin' Over You", "Sexy Bitch", and "Memories", the first three of which reached number one in the United Kingdom.</template>
-	</category>
-	<category>
-	<pattern>IM INTERESTED IN DRAKE</pattern>
-	<template>Aubrey Drake Graham (born October 24, 1986) is a Canadian rapper, singer, songwriter, record producer, and actor. Drake initially gained recognition as an actor on the teen drama television series Degrassi: The Next Generation in the early 2000s. Intent on pursuing a career as a rapper, he departed the series in 2007 following the release of his debut mixtape, Room for Improvement. He released two further independent projects, Comeback Season and So Far Gone, before signing to Lil Wayne's Young Money Entertainment in June 2009.</template>
-	</category>
+
 </aiml>
