@@ -34,6 +34,7 @@ kernel.setPredicate("user_name", "")
 soundNo = 0
 # kernel now ready for use
 print console + "AmyBot is operational..."
+# IO.botOutput("AmyBot here")
 while True:
     # take the input from the user
     user_message = IO.userInput()

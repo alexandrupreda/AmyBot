@@ -99,12 +99,13 @@
       <template>
         <think><set name="seat_no"><star/></set></think>
         <condition name ="seat_no">
-          <li value ="two">Sporty, are we? 2 seats it is. </li>
+          <li value ="two">Sporty are we? 2 seats it is. </li>
           <li value ="four">4 seats it is.</li>
           <li>
             <srai><star/> SEATER</srai>
           </li>
-        </condition>      
+        </condition>
+      What kind of gearbox, manual or automatic?
       </template>
     </category>
 
@@ -204,7 +205,7 @@
   <!--Other-->
   <category>
     <pattern>I THINK * CARS ARE *</pattern>
-    <template>You would think <star index ="1"/> out of all would not be <star index ="2"/> right?</template>
+    <template>You would think <star index ="1"/> cars out of all would not be <star index ="2"/> right?</template>
   </category>
 
   </topic>

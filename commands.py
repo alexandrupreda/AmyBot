@@ -17,7 +17,7 @@ def resetBrain():
 # learn commands
 def learn():
     print console + "This is a developer option. PROCEED WITH CARE!"
-    print "\n" + console + "File name: "
+    IO.botOutput("What's the topic about")
     fileName = IO.userInput()
     fileName = "aiml_files\\" + fileName + ".aiml"
     print console + "Accessing " + fileName + "..."

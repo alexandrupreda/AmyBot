@@ -49,6 +49,11 @@
 	<that>* BURN WHEN IM NOT THERE</that>
 	<template>am i the answer to your prayers</template>
 	</category>
+
+	<category>
+	<pattern>LOOK WHAT YOU VE DONE</pattern>
+	<template>I am a Star Boy</template>
+	</category>
 
 	</topic>
 </aiml>

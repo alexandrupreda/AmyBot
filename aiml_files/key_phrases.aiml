@@ -76,7 +76,7 @@
   
   
   <category>
-    <pattern>LET US TALK ABOUT SOMETHING ELSE</pattern>
+    <pattern>* TALK ABOUT SOMETHING ELSE</pattern>
     <template>
       <random>
         <li>Changing topic...</li>

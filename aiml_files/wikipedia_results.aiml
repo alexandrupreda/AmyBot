@@ -4,7 +4,30 @@
 
     <category>
     <pattern>* INTERESTED IN *</pattern>
-    <template>Let me do a web search on this, hold on...</template>
+    <template>Let me do a web search on this...</template>
     </category>
 
+
+	<category>
+	<pattern>* INTERESTED IN DRAKE</pattern>
+	<template>Aubrey Drake Graham  is a Canadian rapper, singer, songwriter, record producer, and actor. Drake initially gained recognition as an actor on the teen drama television series Degrassi: The Next Generation in the early 2000s.</template>
+	</category>
+
+	<category>
+	<pattern>* INTERESTED IN DUA LIPA</pattern>
+	<template>Dua Lipa ; born 22 August 1995) is an English singer, songwriter and model. Her musical career began at age 14, when she began covering songs by artists such as P!nk and Nelly Furtado on YouTube.</template>
+	</category>
+
+	<category>
+	<pattern>* INTERESTED IN KENDRICK LAMAR</pattern>
+	<template>Kendrick Lamar Duckworth  is an American rapper and songwriter. Born and raised in Compton, California, he embarked on his musical career as a teenager under the stage name K-Dot, releasing a mixtape that garnered local attention and led to his signing with indie record label Top Dawg Entertainment .</template>
+	</category>
+	<category>
+	<pattern>* INTERESTED IN J COLE</pattern>
+	<template>Jermaine Lamarr Cole , better known by his stage name J. Cole, is an American hip hop recording artist and record producer. Raised in Fayetteville, North Carolina, Cole initially gained recognition as a rapper following the release of his debut mixtape, The Come Up, in early 2007.</template>
+	</category>
+	<category>
+	<pattern>* INTERESTED IN SIDEWALKS BY THE WEEKND</pattern>
+	<template>"Sidewalks" is a song by Canadian singer The Weeknd, featuring American rapper Kendrick Lamar, from his third studio album Starboy . The song was written by Abel Tesfaye, Martin McKinney, Daniel Wilson, Robert John Richardson, Kendrick Lamar Duckworth and Ali Shaheed Jones-Muhummad, being produced by Doc McKinney, Bobby Raps and Ali Shaheed Muhammad.</template>
+	</category>
 </aiml>

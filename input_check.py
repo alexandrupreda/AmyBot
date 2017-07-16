@@ -18,7 +18,7 @@ def checkUserInputForAction(message):
 
 
 def checkForLearnKeyPhrase(message):
-    if ("lets learn" in message) or ("learn something new" in message):
+    if "learn" in message:
         print(console + "\'learn\' command detected...")
         return True
 

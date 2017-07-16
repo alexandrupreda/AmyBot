@@ -117,9 +117,7 @@
 
   <category>
     <pattern>* MEET YOU</pattern>
-    <that>
-      MY NAME IS AMYBOT
-    </that>
+
     <template>Pleasure is all mine</template>
   </category>
 

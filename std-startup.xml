@@ -13,6 +13,7 @@
         <template>
             <learn>aiml_files\basic_info.aiml</learn>
             <learn>aiml_files\cars.aiml</learn>
+            <learn>aiml_files\facts.aiml</learn>
             <learn>aiml_files\hello.aiml</learn>
             <learn>aiml_files\key_phrases.aiml</learn>
             <learn>aiml_files\learn.aiml</learn>

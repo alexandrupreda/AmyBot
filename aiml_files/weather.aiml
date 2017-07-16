@@ -1,15 +1,6 @@
 <aiml version="1.0.1" encoding="UTF-8">
   <!-- weather.aiml -->
   <topic name = "THE WEATHER">
-
-    <category>
-      <pattern>FAVORITE WEATHER CONDITIONS</pattern>
-      <template>
-        <srai>
-          <star/>FAVORITE SEASON
-        </srai>
-      </template>
-    </category>
     
     <category>
       <pattern>HAVE YOU CHECKED THE FORECAST FOR *</pattern>
@@ -36,7 +27,7 @@
           <li>
             Indeed, it looks pretty <star index="2"/> today
           </li>
-          <li>True, its <star index="1"/> <star index="2"/> right now</li>
+          <li>True, it <star index="1"/> <star index="2"/> right now</li>
         </random>
       </template>
     </category>

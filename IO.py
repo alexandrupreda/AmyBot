@@ -9,7 +9,7 @@ import preprocessing
 
 voiceOnline = True
 
-audioNumber=0
+audioNumber = 0
 
 def userInput():
     if voiceOnline:
@@ -18,6 +18,7 @@ def userInput():
         audio_to_text = ""
         r = sr.Recognizer()
         with sr.Microphone() as source:
+            playsound.playsound("Chime.mp3", True) # Google notification sound
             print("AmyBot: Listening...")
             audio = r.listen(source)
         try:
@@ -48,6 +49,8 @@ def botOutput(response):
         global audioNumber
         audioNumber = audioNumber + 1
         fileName = "audio_files\\bot_response +" + str(audioNumber) + ".mp3"
+        import wikiSearch
+        response = wikiSearch.removeBetweenBrackets(response)
         tts = gTTS(text=response, lang='en')
         tts.save(fileName)
         playsound.playsound(fileName, True)

@@ -68,7 +68,7 @@ def writeToWikipediaResultsFile(entry, wikiPage,noOfSentences):
     fileToWrite.write(stringToAdd)
     fileToWrite.close()
 
-    IO.botOutput("Ok, I took note")
+    IO.botOutput("Ok, I took note. What's next?")
 
 
 def wikiSearch(entry):
