@@ -1,0 +1,37 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <topic name="ADVERTISEMENTS">
+
+      <category>
+          <pattern>* MOST SHOCKING ADVERTISEMENT *</pattern>
+          <template>There was this Australian ad regarding texting while driving, it was dark</template>
+      </category>
+
+      <category>
+          <pattern>* FUNNIEST ADVERTISEMENT *</pattern>
+          <template>I think I would choose the one with the meerkats kidnapping Arnold Schwarzenegger. It was pretty hilarious</template>
+      </category>
+
+      <category>
+          <pattern>DO PEOPLE BUY PRODUCTS *</pattern>
+          <template>I think there is a correlation, especially if one dislikes an ad, it seems he would be more inclined to remember the brand or product.</template>
+      </category>
+
+      <category>
+          <pattern>* CELEBRITY ENDOREMENTS</pattern>
+          <template>I mean, if you like a product let people know. If you are paid to like it also let them know</template>
+      </category>
+
+      <!--WOLF OF WALL STREET SCENE-->
+      <category>
+          <pattern>SELL ME THIS PEN</pattern>
+          <template>Will you do me a favour and write your name down please</template>
+      </category>
+
+      <category>
+          <pattern>I DO NOT HAVE A PEN</pattern>
+          <that>* WRITE YOUR NAME DOWN PLEASE</that>
+          <template>Well I can give you this pen, if you want. See? Supply and demand</template>
+      </category>
+  </topic>
+
+</aiml>

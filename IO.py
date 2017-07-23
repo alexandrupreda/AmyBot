@@ -34,11 +34,11 @@ def userInput():
             print("ERROR: Could not request results from Google Speech Recognition service; {0}".format(e))
             exit()
         user_input = audio_to_text
-        print "User: " + user_input
     else:
         user_input = raw_input("User: ")
 
     user_input = preprocessing.init(user_input)
+    print "User: " + user_input
 
     return user_input
 
@@ -48,9 +48,10 @@ def botOutput(response):
     if voiceOnline:
         global audioNumber
         audioNumber = audioNumber + 1
-        fileName = "audio_files\\bot_response +" + str(audioNumber) + ".mp3"
+        fileName = "audio_files\\bot_response " + str(audioNumber) + ".mp3"
         import wikiSearch
         response = wikiSearch.removeBetweenBrackets(response)
         tts = gTTS(text=response, lang='en')
         tts.save(fileName)
         playsound.playsound(fileName, True)
+        # TODO: Delete audio files when entering the program

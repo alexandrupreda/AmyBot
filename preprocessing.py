@@ -14,6 +14,8 @@ def init(text_input):
     text_input = text_input.replace("don't", "do not")
     text_input = text_input.replace("won't", "will not")
 
+    text_input = text_input.replace(" ad ", " advertisement ")
+
     for char in string.punctuation:
         text_input = text_input.replace(char, ' ')
     return text_input

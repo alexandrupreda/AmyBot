@@ -7,6 +7,8 @@ import input_check
 import output_check
 import IO
 
+import Tkinter as tk
+
 
 # please check that line 389 in wikipedia.py is as follows: lis = BeautifulSoup(html, 'html.parser').find_all('li')
 # https://github.com/goldsmith/Wikipedia/commit/50bc236836dc20546af61ea7ca6198c3f039a816
@@ -35,7 +37,9 @@ soundNo = 0
 # kernel now ready for use
 print console + "AmyBot is operational..."
 # IO.botOutput("AmyBot here")
-while True:
+
+
+def initialiseAmyBot():
     # take the input from the user
     user_message = IO.userInput()
 
@@ -45,7 +49,7 @@ while True:
     # if special command identified, skip bot response (AIML)
     if specialKeyword:
         kernel.bootstrap(learnFiles=lib, commands="load aiml b")
-        continue
+        return
 
     bot_response = kernel.respond(user_message)
     IO.botOutput(bot_response)
@@ -54,4 +58,12 @@ while True:
     if output_check.checkBotResponseForAction(bot_response.lower(), user_message):
         kernel.bootstrap(learnFiles=lib, commands="load aiml b")
         # kernel.saveBrain(brain)
-    time.sleep(1)
+
+# based on http://www.python-course.eu/tkinter_buttons.php
+root = tk.Tk()
+root.title("AmyBot")
+label = tk.Label(root, fg="dark green")
+label.pack()
+button = tk.Button(root, text='Speak', width=30, command=initialiseAmyBot)
+button.pack()
+root.mainloop()
