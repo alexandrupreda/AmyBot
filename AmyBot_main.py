@@ -1,42 +1,36 @@
 import aiml
 import os
 import sys
-import time
+import Tkinter as tk
 
 import input_check
 import output_check
 import IO
 
-import Tkinter as tk
-
-
 # please check that line 389 in wikipedia.py is as follows: lis = BeautifulSoup(html, 'html.parser').find_all('li')
 # https://github.com/goldsmith/Wikipedia/commit/50bc236836dc20546af61ea7ca6198c3f039a816
 # also, make sure that nltk parser is installed; tokenizers/punkt/english.pickle
-
 
 currentFile = os.path.basename(sys.argv[0])
 console = "CONSOLE(" + currentFile + "): "
 lib = "std-startup.xml"
 brain = "bot_brain.brn"
 
-kernel = aiml.Kernel()
-# load brain or relearn files
-# if os.path.isfile("bot_brain.brn"):
-#     kernel.bootstrap(brainFile="bot_brain.brn")
-# else:
-kernel.bootstrap(learnFiles=lib, commands="load aiml b")
-# kernel.saveBrain("bot_brain.brn")
 
-kernel.setPredicate("amy_name", "AmyBot")
-kernel.setPredicate("amy_short", "Amy")
-kernel.setPredicate("creator", "Alexandru Preda")
-
-kernel.setPredicate("user_name", "")
-soundNo = 0
-# kernel now ready for use
-print console + "AmyBot is operational..."
-# IO.botOutput("AmyBot here")
+# clears the audio folder of any previous bot responses audio files
+# https://stackoverflow.com/questions/185936/delete-folder-contents-in-python
+def emptyAudioFolder():
+    import os, shutil
+    folder = os.path.abspath("audio_files")
+    print folder
+    for the_file in os.listdir(folder):
+        file_path = os.path.join(folder, the_file)
+        try:
+            if os.path.isfile(file_path):
+                os.unlink(file_path)
+                # elif os.path.isdir(file_path): shutil.rmtree(file_path)
+        except Exception as e:
+            print(e)
 
 
 def initialiseAmyBot():
@@ -59,6 +53,31 @@ def initialiseAmyBot():
         kernel.bootstrap(learnFiles=lib, commands="load aiml b")
         # kernel.saveBrain(brain)
 
+
+# empty the audio_files folder
+emptyAudioFolder()
+
+# load the kernel
+kernel = aiml.Kernel()
+
+# load brain or relearn files
+# if os.path.isfile("bot_brain.brn"):
+#     kernel.bootstrap(brainFile="bot_brain.brn")
+# else:
+
+kernel.bootstrap(learnFiles=lib, commands="load aiml b")
+# kernel.saveBrain("bot_brain.brn")
+
+# set some initial predicates
+kernel.setPredicate("amy_name", "AmyBot")
+kernel.setPredicate("amy_short", "Amy")
+kernel.setPredicate("creator", "Alexandru Preda")
+kernel.setPredicate("user_name", "")
+
+# kernel now ready for use
+print console + "AmyBot is operational..."
+
+# creates an UI for the bot, suing Tkinter
 # based on http://www.python-course.eu/tkinter_buttons.php
 root = tk.Tk()
 root.title("AmyBot")
