@@ -18,8 +18,9 @@
             <learn>aiml_files\hello.aiml</learn>
             <learn>aiml_files\key_phrases.aiml</learn>
             <learn>aiml_files\learn.aiml</learn>
-            <learn>aiml_files\weather.aiml</learn>
             <learn>aiml_files\lyrics.aiml</learn>
+            <learn>aiml_files\movies.aiml</learn>
+            <learn>aiml_files\weather.aiml</learn>
             <learn>aiml_files\wikipedia_results.aiml</learn>
 
 

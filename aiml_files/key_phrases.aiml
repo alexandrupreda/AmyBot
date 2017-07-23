@@ -26,7 +26,7 @@
     <pattern>LET US TALK ABOUT *</pattern>
     <template>
       <random>
-        <li>Sure lets talk about <set name = "topic"><star/></set></li>
+        <li>Sure, lets talk about <set name = "topic"><star/></set></li>
         <li>Fine, <set name = "topic"><star/></set> it is</li>
         <li>Alright then, what about <set name = "topic"><star/></set></li>
         <li>We can talk about <set name = "topic"><star/></set></li>

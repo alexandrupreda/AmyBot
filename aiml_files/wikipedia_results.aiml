@@ -29,5 +29,9 @@
 	<category>
 	<pattern>* INTERESTED IN SIDEWALKS BY THE WEEKND</pattern>
 	<template>"Sidewalks" is a song by Canadian singer The Weeknd, featuring American rapper Kendrick Lamar, from his third studio album Starboy . The song was written by Abel Tesfaye, Martin McKinney, Daniel Wilson, Robert John Richardson, Kendrick Lamar Duckworth and Ali Shaheed Jones-Muhummad, being produced by Doc McKinney, Bobby Raps and Ali Shaheed Muhammad.</template>
+	</category>
+	<category>
+	<pattern>* INTERESTED IN SOURCE CODE FILM</pattern>
+	<template>In computing, source code is any collection of computer instructions, possibly with comments, written using a human-readable programming language, usually as ordinary text. The source code of a program is specially designed to facilitate the work of computer programmers, who specify the actions to be performed by a computer mostly by writing source code.</template>
 	</category>
 </aiml>

@@ -11,6 +11,8 @@ voiceOnline = True
 
 audioNumber = 0
 
+
+# remember: the Bot uses UK English; keep in mind when writing code, since it uses US English
 def userInput():
     if voiceOnline:
         # Imported from
@@ -18,7 +20,7 @@ def userInput():
         audio_to_text = ""
         r = sr.Recognizer()
         with sr.Microphone() as source:
-            playsound.playsound("Chime.mp3", True) # Google notification sound
+            playsound.playsound("Chime.mp3", True)  # Google notification sound
             print("AmyBot: Listening...")
             audio = r.listen(source)
         try:
@@ -54,4 +56,3 @@ def botOutput(response):
         tts = gTTS(text=response, lang='en')
         tts.save(fileName)
         playsound.playsound(fileName, True)
-        # TODO: Delete audio files when entering the program

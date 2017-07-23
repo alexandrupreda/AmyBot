@@ -1,0 +1,18 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <topic name="MOVIES">
+	<category>
+		<pattern>* FAVOURITE MOVIE</pattern>
+		<template>That would be Source Code, with Jake Gyllenhaal and Michelle Monaghan</template>
+	</category>
+
+    <category>
+		<pattern>* FAVOURITE FILM</pattern>
+		<template>
+            <srai><star/> FAVOURITE MOVIE</srai>
+        </template>
+	</category>
+
+    <!--TODO: Write HAVE YOU SEEN *-->
+  </topic>
+
+</aiml>
