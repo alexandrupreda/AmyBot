@@ -20,10 +20,9 @@
             <learn>aiml_files\learn.aiml</learn>
             <learn>aiml_files\lyrics.aiml</learn>
             <learn>aiml_files\movies.aiml</learn>
+            <learn>aiml_files\music.aiml</learn>
             <learn>aiml_files\weather.aiml</learn>
             <learn>aiml_files\wikipedia_results.aiml</learn>
-
-
 
 
             <!-- You can add more aiml files here -->

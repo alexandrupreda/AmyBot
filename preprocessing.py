@@ -2,7 +2,8 @@ import string
 
 
 def init(text_input):
-    text_input = text_input.replace("star", "* ")
+    text_input = text_input.lower()
+    # text_input = text_input.replace("star", "* ")
     text_input = text_input.replace("let's", "let us")
 
     text_input = text_input.replace("'m", " am")  # I'm

@@ -26,7 +26,7 @@
     <pattern>LET US TALK ABOUT *</pattern>
     <template>
       <random>
-        <li>Sure, lets talk about <set name = "topic"><star/></set></li>
+        <li>Sure, let's talk about <set name = "topic"><star/></set></li>
         <li>Fine, <set name = "topic"><star/></set> it is</li>
         <li>Alright then, what about <set name = "topic"><star/></set></li>
         <li>We can talk about <set name = "topic"><star/></set></li>
@@ -38,7 +38,7 @@
     <pattern>LET US DISCUSS *</pattern>
     <template>
       <srai>
-        LETS TALK ABOUT <star/>
+        LET US TALK ABOUT <star/>
       </srai>
     </template>
   </category>
@@ -47,7 +47,7 @@
     <pattern>* LET US DISCUSS *</pattern>
     <template>
       <srai>
-        LETS TALK ABOUT <star index="2"/>
+        LET US TALK ABOUT <star index="2"/>
       </srai>
     </template>
   </category>
@@ -56,7 +56,7 @@
     <pattern>* LET US TALK ABOUT *</pattern>
     <template>
       <srai>
-        LETS TALK ABOUT <star index ="2"/>
+        LET US TALK ABOUT <star index ="2"/>
       </srai>
     </template>
   </category>
@@ -65,7 +65,7 @@
     <pattern>LET US TALK *</pattern>
     <template>
       <srai>
-        LETS TALK ABOUT <star/>
+        LET US TALK ABOUT <star/>
       </srai>
     </template>
   </category>
@@ -76,7 +76,7 @@
   
   
   <category>
-    <pattern>* TALK ABOUT SOMETHING ELSE</pattern>
+    <pattern>HOW ABOUT WE * SOMETHING ELSE</pattern>
     <template>
       <random>
         <li>Changing topic...</li>

@@ -1,0 +1,50 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <topic name="MUSIC">
+        <category>
+            <pattern>* GOOD SINGER</pattern>
+            <template>Of course, just go to any electronic music festival and you'll see</template>
+        </category>
+
+        <category>
+            <pattern>* MUSICAL INSTRUMENTS</pattern>
+            <template>Is a synthesizer considered an instrument</template>
+        </category>
+        <category>
+            <pattern>YES</pattern>
+            <that>IS A SYNTHESIZER CONSIDERED AN INSTRUMENT</that>
+            <template>Well, then I do</template>
+        </category>
+        <category>
+            <pattern>NO</pattern>
+            <that>IS A SYNTHESIZER CONSIDERED AN INSTRUMENT</that>
+            <template>In that case, no.</template>
+        </category>
+
+        <category>
+            <pattern>DO YOU LIKE TO DANCE</pattern>
+            <template>I am not yet capable of doing that, you know</template>
+        </category>
+
+        <category>
+            <pattern>* MUSIC MAKE YOU FEEL</pattern>
+            <template>In one word: groovy</template>
+        </category>
+
+        <category>
+            <pattern>* FAVOURITE SONG</pattern>
+            <template>It's called Computerized, by Daft Punk. If I think about it I also like Robot Rock</template>
+        </category>
+        <category>
+            <pattern>WHY *</pattern>
+            <that>* I ALSO LIKE ROBOT ROCK</that>
+            <template>It speaks to me on a deep level. Also, it's about computers as well</template>
+        </category>
+
+        <category>
+            <pattern>* MUSIC DO YOU LISTEN TO</pattern>
+            <template>Electronic music, of course. I also enjoy smooth jazz</template>
+        </category>
+
+    </topic>
+
+</aiml>

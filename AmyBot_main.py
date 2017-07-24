@@ -72,17 +72,22 @@ kernel.bootstrap(learnFiles=lib, commands="load aiml b")
 kernel.setPredicate("amy_name", "AmyBot")
 kernel.setPredicate("amy_short", "Amy")
 kernel.setPredicate("creator", "Alexandru Preda")
-kernel.setPredicate("user_name", "")
+kernel.setPredicate("user_name", "Alex")
+kernel.setPredicate("movie_choice", "")
 
 # kernel now ready for use
 print console + "AmyBot is operational..."
 
 # creates an UI for the bot, suing Tkinter
 # based on http://www.python-course.eu/tkinter_buttons.php
-root = tk.Tk()
-root.title("AmyBot")
-label = tk.Label(root, fg="dark green")
-label.pack()
-button = tk.Button(root, text='Speak', width=30, command=initialiseAmyBot)
-button.pack()
-root.mainloop()
+if IO.voiceOnline:
+    root = tk.Tk()
+    root.title("AmyBot")
+    label = tk.Label(root, fg="dark green")
+    label.pack()
+    button = tk.Button(root, text='Speak', width=30, command=initialiseAmyBot)
+    button.pack()
+    root.mainloop()
+else:
+    while True:
+        initialiseAmyBot()
