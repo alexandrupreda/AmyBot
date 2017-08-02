@@ -81,6 +81,18 @@ hello.aiml
 	- end
 [HEY], [HEY*] ,[HI],[HIYA],[WHAT IS UP], [WHAT IS NEW], [YO], [YOU ALRIGHT], [GOOD AFTERNOON]
 
+advertisements.aiml
+
+[* MOST SHOCKING ADVERTISEMENT]
+
+[* FUNNIEST ADVERTISEMENT *]
+
+[DO PEOPLE BUY PRODUCTS *]
+
+[* CELEBRITY ENDORSEMENTS]
+
+[SELL ME THIS PEN]
+
 basic_info.aiml
 
 [* YOUR NAME] //What is your name
@@ -107,6 +119,31 @@ cars.aiml
 
 facts.aiml
 lyrics.aiml
+
+movies.aiml
+
+[* FAVOURITE FILM/MOVIE] -> conversation
+
+[HAVE YOU SEEN/WATCHED *]
+
+[* HORROR MOVIES]
+
+[* WORST MOVIE/FILM]
+
+music.aiml
+
+[* GOOD SINGER]
+
+[* MUSICAL INSTRUMENTS]
+
+[DO YOU LIKE TO DANCE]
+
+[* MUSIC MAKE YOU FEEL]
+
+[* FAVOURITE SONG] -> conv
+
+[* MUSIC DO YOU LISTEN TO]
+
 weather.aiml
 
 [HAVE YOU CHECKED THE WEATHER FOR *], {HAVE YOU CHECKED THE FORECAST FOR *]
