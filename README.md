@@ -9,6 +9,7 @@ University of Essex, 2017
 This project contains external libraries or files, which have been attached to the project.
 Please note that there is no intention of plagiarism, as each of them have been credited and attached for academic/educational purposes only.
 
+----------------------------------------------------------------------------------------------------
 
 Dependencies (to install)
 Python 2.7
