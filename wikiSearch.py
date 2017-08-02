@@ -5,6 +5,10 @@ from nltk import tokenize
 import commands
 import IO
 
+# please check that line 389 in wikipedia.py is as follows: lis = BeautifulSoup(html, 'html.parser').find_all('li')
+# https://github.com/goldsmith/Wikipedia/commit/50bc236836dc20546af61ea7ca6198c3f039a816
+# also, make sure that nltk parser is installed; tokenizers/punkt/english.pickle
+
 
 # uses
 # https://stackoverflow.com/questions/9474395/how-to-break-up-a-paragraph-by-sentences-in-python

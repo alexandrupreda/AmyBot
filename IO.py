@@ -1,9 +1,6 @@
-import os
 import speech_recognition as sr
 from gtts import gTTS
 import playsound
-import time
-from tempfile import TemporaryFile
 
 import preprocessing
 
@@ -12,7 +9,8 @@ voiceOnline = True
 audioNumber = 0
 
 
-# remember: the Bot uses UK English; keep in mind when writing code, since it uses US English
+
+# remember: the Bot uses UK English; keep in mind when writing code, since it differs from US English
 def userInput():
     if voiceOnline:
         # Imported from

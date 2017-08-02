@@ -6,6 +6,46 @@ Based on A.L.I.C.E (http://alice.pandorabots.com/) and Betty Bot, created by Sia
 All rights reserved.
 University of Essex, 2017
 
+This project contains external libraries or files, which have been attached to the project.
+Please note that there is no intention of plagiarism, as each of them have been credited and attached for academic/educational purposes only.
+
+
+Dependencies (to install)
+Python 2.7
+
+Dependencies (already attached to the project):
+aiml - (aka Program Y), an AIML interpreter implemented in Python, creted by Cort Danger Stratton
+https://github.com/creatorrr/pyAIML
+
+gtts - Creates an mp3 file from spoken text via the Google TTS (Text-to-Speech) API
+https://pypi.python.org/pypi/gTTS
+
+nltk - The Natural Language Toolkit (NLTK) is a Python package for natural language processing
+https://pypi.python.org/pypi/nltk
+
+playsound - Pure Python, cross platform, single function module with no dependencies for playing sounds.
+https://pypi.python.org/pypi/playsound/1.2.2
+
+speech_recognition - Library for performing speech recognition
+https://pypi.python.org/pypi/SpeechRecognition/
+
+pyaudio - Bindings for PortAudio v19, the cross-platform audio input/output stream library
+https://pypi.python.org/pypi/PyAudio
+
+portaudio - required for pyaudio
+
+wikipedia - a Python library that makes it easy to access and parse data from Wikipedia.
+https://pypi.python.org/pypi/wikipedia/
+
+
+[requests and bs4 required by wikipedia.py]
+[urllib3, chardet, certifi, idna required by requests]
+[six required by nltk]
+[gtts_token required by gTTS]
+[pyaudio required by speech_recognition]
+
+----------------------------------------------------------------------------------------------------
+
 (voice can be turned on/off by changing the value of 'voiceOnline' in IO.py)
 
 KNOWLEDGE BASE
@@ -97,7 +137,7 @@ wikipedia_results.aiml
 
 FUNCTIONS
 'learn'
-'reset'
+'reset' (not currently online)
 'interested in'
 
 

@@ -1,15 +1,15 @@
+# aiml is pyAIML, (aka Program Y), an AIML interpreter implemented in Python, creted by Cort Danger Stratton
+# https://github.com/creatorrr/pyAIML
 import aiml
+
 import os
 import sys
 import Tkinter as tk
 
-import input_check
-import output_check
-import IO
+import input_check   # local file
+import output_check  # local file
+import IO            # local file
 
-# please check that line 389 in wikipedia.py is as follows: lis = BeautifulSoup(html, 'html.parser').find_all('li')
-# https://github.com/goldsmith/Wikipedia/commit/50bc236836dc20546af61ea7ca6198c3f039a816
-# also, make sure that nltk parser is installed; tokenizers/punkt/english.pickle
 
 currentFile = os.path.basename(sys.argv[0])
 console = "CONSOLE(" + currentFile + "): "
