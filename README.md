@@ -75,8 +75,11 @@ hello.aiml
 [GOOD MORNING], [MORNING]
 
 [HELLO],[HELLO *] - induction (YEAH, SYRE, FINE, NO, NOPE, NAH, NOT *)
-	+ induction -> basic questions (SURE, OK, NO)
-		+ basic_info
+[tab title="Tab 1" id="t1"]+ induction -> basic questions (SURE, OK, NO)[/tab]
+[tab title="Tab 2" id="t2"]+ basic_info[/tab]
+
+	
+		
 		- end
 	- end
 [HEY], [HEY*] ,[HI],[HIYA],[WHAT IS UP], [WHAT IS NEW], [YO], [YOU ALRIGHT], [GOOD AFTERNOON]
