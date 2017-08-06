@@ -104,6 +104,10 @@ def interestedInCommand(message):
     except:
         traceback.print_exc()
 
+def timeCommand():
+    from datetime import datetime
+    IO.botOutput("The time is " + datetime.now().strftime('%H:%M'))
+
 
 def yesAnswer(prompt):
     if not prompt == "no" or not "n" in prompt:

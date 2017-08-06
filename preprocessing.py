@@ -17,6 +17,9 @@ def init(text_input):
 
     text_input = text_input.replace(" ad ", " advertisement ")
 
+    # other modifications
+    text_input = text_input.replace("can you tell me about", "i am interested in")
+
     for char in string.punctuation:
         text_input = text_input.replace(char, ' ')
     return text_input

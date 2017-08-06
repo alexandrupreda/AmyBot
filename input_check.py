@@ -15,11 +15,19 @@ def checkUserInputForAction(message):
     if checkForResetKeyPhrase(message):
         commands.resetBrain()
         return True
+    if checkForTimeCommand(message):
+        commands.timeCommand()
+        return True
 
 
 def checkForLearnKeyPhrase(message):
     if "learn" in message:
         print(console + "\'learn\' command detected...")
+        return True
+
+
+def checkForTimeCommand(message):
+    if "time" in message:
         return True
 
 

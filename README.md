@@ -176,6 +176,7 @@ FUNCTIONS
 'learn'
 'reset' (not currently online)
 'interested in'
+'time'
 
 
 

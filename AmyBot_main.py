@@ -32,7 +32,6 @@ def emptyAudioFolder():
         except Exception as e:
             print(e)
 
-
 def initialiseAmyBot():
     # take the input from the user
     user_message = IO.userInput()
