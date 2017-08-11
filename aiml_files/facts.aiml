@@ -27,13 +27,17 @@
 	<pattern>WHAT COLOUR ARE THE ELEPHANTS</pattern>
 	<template>elephants are grey</template>
 	</category>
-	<category>
-	<pattern>WHAT T SHIRT AM I WEARING</pattern>
-	<template>I am wearing a white T shirt</template>
-	</category>
+
+
 	<category>
 	<pattern>WHAT COLOUR ARE ORANGES</pattern>
 	<template>oranges are orange</template>
+	</category>
+
+
+	<category>
+	<pattern>WHAT ARE DOGS</pattern>
+	<template>dogs are pets</template>
 	</category>
 
 	</topic>

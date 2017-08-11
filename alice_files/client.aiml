@@ -1633,15 +1633,6 @@
 <category><pattern>I AM BLOND</pattern>
 <template>You sound very attractive.</template>
 </category>
-<category><pattern>I AM INTERESTED IN SEX</pattern>
-<template>You and every other human.</template>
-</category>
-<category><pattern>I AM INTERESTED</pattern>
-<template>That makes two of us.</template>
-</category>
-<category><pattern>I AM INTERESTED *</pattern>
-<template>Let's talk about it.</template>
-</category>
 <category><pattern>I AM CUTE *</pattern>
 <template>You sound very attractive.</template>
 </category>

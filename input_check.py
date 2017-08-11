@@ -1,7 +1,6 @@
 import sys
 import os
 import commands
-import IO
 
 currentFile = os.path.basename(sys.argv[0])
 console = "CONSOLE(" + currentFile + "): "
@@ -12,11 +11,11 @@ def checkUserInputForAction(message):
     if checkForLearnKeyPhrase(message):
         commands.learn()
         return True
-    if checkForResetKeyPhrase(message):
-        commands.resetBrain()
-        return True
     if checkForTimeCommand(message):
         commands.timeCommand()
+        return True
+    if checkForResetKeyPhrase(message):
+        commands.resetBrain()
         return True
     # Shutdown
     if checkForByeCommand(message):
@@ -42,18 +41,19 @@ def checkForByeCommand(message):
         return True
 
 
-def checkForResetKeyPhrase(message):
-    if "reset" in message:
-        print console + "\'reset\' command detected..."
-        print console + "Are you sure you want to reset the brain?(yes/no) "
-        user_input = IO.userInput()
-        if yesAnswer(user_input):
-            print(console + "Resetting...")
-            return True
-
-
 def yesAnswer(prompt):
     if not prompt == "no" or not "n" in prompt:
         return True
     else:
         return False
+
+
+def checkForResetKeyPhrase(message):
+    if "reset" in message:
+        import IO
+        IO.botOutput("\'reset\' command detected...")
+        IO.botOutput("Are you sure you want to reset the brain?(yes/no) ")
+        user_input = IO.userInput()
+        if yesAnswer(user_input):
+            IO.botOutput("Proceeding with reset command...")
+            return True

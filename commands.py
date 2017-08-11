@@ -8,12 +8,6 @@ currentFile = os.path.basename(sys.argv[0])
 console = "CONSOLE(" + currentFile + "): "
 
 
-def resetBrain():
-    os.remove("bot_brain.brn")
-    print(console + "Done. Goodbye!")
-    exit()
-
-
 # learn commands
 def learn():
     print console + "This is a developer option. PROCEED WITH CARE!"
@@ -104,10 +98,15 @@ def interestedInCommand(message):
     except:
         traceback.print_exc()
 
+
 def timeCommand():
     from datetime import datetime
     IO.botOutput("The time is " + datetime.now().strftime('%H:%M'))
 
+def resetBrain():
+    os.remove("bot_brain.brn")
+    print(console + "Done. Goodbye!")
+    exit()
 
 def yesAnswer(prompt):
     if not prompt == "no" or not "n" in prompt:

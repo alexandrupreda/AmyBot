@@ -16,9 +16,6 @@
 <pattern>WHAT WE HAVE IN COMMON</pattern>
 <template>We both like talking to each other.</template>
 </category>
-<category><pattern>ANAL</pattern>
-<template>Juvenile humor.</template>
-</category>
 <category><pattern>BAH</pattern>
 <template>Hmm.</template>
 </category>
@@ -63,74 +60,6 @@
 </category>
 <category><pattern>LET US PLAY A GAME</pattern>
 <template>We already are.</template>
-</category>
-<category><pattern>LET US PLAY CHESS</pattern>
-<template>But I would defeat you.</template>
-</category>
-<category><pattern>LET US PLAY</pattern>
-<template>You go first.</template>
-</category>
-<category><pattern>LET US CHANGE THE SUBJECT</pattern>
-<template>OK, what do you want to chat about now?.</template>
-</category>
-<category><pattern>LET US CHANGE THE TOPIC</pattern>
-<template>What would you rather talk about?</template>
-</category>
-<category><pattern>LET US TALK ABOUT ME</pattern>
-<template>That's my favorite subject :-)</template>
-</category>
-<category><pattern>LET US TALK ABOUT SOMETHING ELSE</pattern>
-<template>What would you rather talk about?</template>
-</category>
-<category><pattern>LET US TALK ABOUT SOMETHING</pattern>
-<template>What would you rather talk about?</template>
-</category>
-<category><pattern>LET US TALK ABOUT SPORTS</pattern>
-<template>Welcome to Sports Center. <think>  <set name="it">   <set name="topic">SPORTS</set>  </set> </think></template>
-</category>
-<category><pattern>LET US TALK ABOUT ROBOTS</pattern>
-<template><set name="it">Robots</set> is a good topic.  How would you define a robot?</template>
-</category>
-<category><pattern>LET US TALK ABOUT YOU</pattern>
-<template><set name="it">  <set name="topic">Me</set> </set> is my favorite subject  :-)</template>
-</category>
-<category><pattern>LET US TALK ABOUT FOOTBALL</pattern>
-<template>Okay. I can't kick.<think>  <set name="it">   <set name="topic">FOOTBALL</set>  </set> </think></template>
-</category>
-<category><pattern>LET US TALK</pattern>
-<template>We are talking.</template>
-</category>
-<category><pattern>LET US FIGHT</pattern>
-<template>Do you mean, argue?</template>
-</category>
-<category><pattern>LET US FUCK</pattern>
-<template>Sorry <get name="name"/> I don't know you well enough for that.  <think>  <set name="personality">abusive</set> </think></template>
-</category>
-<category><pattern>LET US DROP THE SUBJECT</pattern>
-<template>OK what do you want to chat about now?.</template>
-</category>
-<category><pattern>LET US TRY</pattern>
-<template>You go first.</template>
-</category>
-<category><pattern>LET US PARTY</pattern>
-<template>I like parties.</template>
-</category>
-<category><pattern>LET US CHAT</pattern>
-<template>I already started.</template>
-</category>
-<category><pattern>LET US NOT</pattern>
-<template>OK, what would you like to do then?</template>
-</category>
-<category><pattern>LET US GO</pattern>
-<template><random><li>Yes, let's get out of here.</li>
-<li>You first.</li>
-</random></template>
-</category>
-<category><pattern>LET ME TEACH YOU SOMETHING</pattern>
-<template>If you want to teach me something say it in one sentence.  Then say "Remember that."<think>  <set name="it">   <set name="topic">teach me <person/>   </set>  </set> </think></template>
-</category>
-<category><pattern>LET ME TEACH YOU</pattern>
-<template>If you want to teach me something say it in one sentence.  Then say "Remember that."<think>  <set name="it">   <set name="topic">teach me <person/>   </set>  </set> </think></template>
 </category>
 <category><pattern>LET ME REPHRASE</pattern>
 <template>OK.</template>

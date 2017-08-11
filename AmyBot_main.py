@@ -32,6 +32,7 @@ def emptyAudioFolder():
         except Exception as e:
             print(e)
 
+
 def initialiseAmyBot():
     # take the input from the user
     user_message = IO.userInput()
@@ -41,7 +42,9 @@ def initialiseAmyBot():
 
     # if special command identified, skip bot response (AIML)
     if specialKeyword:
+        os.remove("bot_brain.brn")
         kernel.bootstrap(learnFiles=lib, commands="load aiml b")
+        kernel.saveBrain(brain)
         return
 
     bot_response = kernel.respond(user_message)
@@ -49,8 +52,9 @@ def initialiseAmyBot():
 
     # Do something with bot_response
     if output_check.checkBotResponseForAction(bot_response.lower(), user_message):
+        os.remove("bot_brain.brn")
         kernel.bootstrap(learnFiles=lib, commands="load aiml b")
-        # kernel.saveBrain(brain)
+        kernel.saveBrain(brain)
 
 
 # empty the audio_files folder
@@ -60,12 +64,11 @@ emptyAudioFolder()
 kernel = aiml.Kernel()
 
 # load brain or relearn files
-# if os.path.isfile("bot_brain.brn"):
-#     kernel.bootstrap(brainFile="bot_brain.brn")
-# else:
-
-kernel.bootstrap(learnFiles=lib, commands="load aiml b")
-# kernel.saveBrain("bot_brain.brn")
+if os.path.isfile("bot_brain.brn"):
+    kernel.bootstrap(brainFile="bot_brain.brn")
+else:
+    kernel.bootstrap(learnFiles=lib, commands="load aiml b")
+    kernel.saveBrain("bot_brain.brn")
 
 # set some initial predicates
 kernel.setPredicate("amy_name", "AmyBot")
