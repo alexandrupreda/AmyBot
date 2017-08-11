@@ -18,6 +18,12 @@ def checkUserInputForAction(message):
     if checkForTimeCommand(message):
         commands.timeCommand()
         return True
+    # Shutdown
+    if checkForByeCommand(message):
+        import IO
+        IO.botOutput("Bye bye")
+        print console + "AmyBot has shutdown"
+        exit()
 
 
 def checkForLearnKeyPhrase(message):
@@ -28,6 +34,11 @@ def checkForLearnKeyPhrase(message):
 
 def checkForTimeCommand(message):
     if "time" in message:
+        return True
+
+
+def checkForByeCommand(message):
+    if "bye" in message:
         return True
 
 

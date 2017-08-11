@@ -24,9 +24,43 @@
             <learn>aiml_files\weather.aiml</learn>
             <learn>aiml_files\wikipedia_results.aiml</learn>
 
+            <!--The following are modified versions of the original A.L.I.C.E. project-->
+            <learn>alice_files\astrology.aiml</learn>
+            <learn>alice_files\atomic.aiml</learn>
+            <learn>alice_files\biography.aiml</learn>
+            <learn>alice_files\client.aiml</learn>
+            <learn>alice_files\computers.aiml</learn>
+            <learn>alice_files\date.aiml</learn>
+            <learn>alice_files\default.aiml</learn>
+            <learn>alice_files\drugs.aiml</learn>
+            <learn>alice_files\emotion.aiml</learn>
+            <learn>alice_files\geography.aiml</learn>
+            <learn>alice_files\gossip.aiml</learn>
+            <learn>alice_files\history.aiml</learn>
+            <learn>alice_files\humor.aiml</learn>
+            <learn>alice_files\iu.aiml</learn>
+            <learn>alice_files\knowledge.aiml</learn>
+            <learn>alice_files\literature.aiml</learn>
+            <learn>alice_files\money.aiml</learn>
+            <learn>alice_files\movies.aiml</learn>
+            <learn>alice_files\mp0.aiml</learn>
+            <learn>alice_files\mp1.aiml</learn>
+            <learn>alice_files\mp2.aiml</learn>
+            <learn>alice_files\mp3.aiml</learn>
+            <learn>alice_files\mp4.aiml</learn>
+            <learn>alice_files\mp5.aiml</learn>
+            <learn>alice_files\mp6.aiml</learn>
+            <learn>alice_files\politics.aiml</learn>
+            <learn>alice_files\psychology.aiml</learn>
+            <learn>alice_files\religion.aiml</learn>
+            <learn>alice_files\salutations.aiml</learn>
+            <learn>alice_files\science.aiml</learn>
+            <learn>alice_files\sports.aiml</learn>
+            <learn>alice_files\update1.aiml</learn>
+            <learn>alice_files\update_mccormick.aiml</learn>
+            <learn>alice_files\xfind.aiml</learn>
 
-            <!-- You can add more aiml files here -->
-            <!--<learn>more_aiml.aiml</learn>-->
+
         </template>
 
     </category>

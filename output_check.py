@@ -7,10 +7,6 @@ console = "CONSOLE(" + currentFile + "): "
 
 
 def checkBotResponseForAction(bot_message, user_message):
-    # Shutdown
-    if "bye" in bot_message:
-        print console + "AmyBot has shutdown"
-        exit()
     # Web Search
     if "web search" in bot_message:
         commands.interestedInCommand(user_message)

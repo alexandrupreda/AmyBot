@@ -45,6 +45,16 @@
             <template>Electronic music, of course. I also enjoy smooth jazz</template>
         </category>
 
+        <category>
+        <pattern>*</pattern>
+        <template>
+          <random>
+              <li>I thought we were talking about music, weren't we?</li>
+              <li>Wait, weren't we discussing music?</li>
+          </random>
+        </template>
+  </category>
+
     </topic>
 
 </aiml>

@@ -24,8 +24,10 @@
         <category>
             <pattern>SO WHAT IS IT ABOUT</pattern>
             <that>* BOTH THRILLER AND DRAMA</that>
-            <template>It's about a soldier who wakes up in someone else's body and discovers he's part of an experimental government program to find the bomber of a commuter train.
-                The mission repeats again and again and he has only 8 minutes to complete it.</template>
+            <template>It's about a soldier who wakes up in someone else's body and discovers he's part of an
+                experimental government program to find the bomber of a commuter train.
+                The mission repeats again and again and he has only 8 minutes to complete it.
+            </template>
         </category>
 
         <category>
@@ -45,8 +47,11 @@
                 <condition name="movie_choice">
                     <li value=" the godfather ">I have, it's a classic</li>
                     <li value=" star wars ">Of course, the Force is strong with this one</li>
-                    <li value=" terminator ">Are you sure you want the answer to that? Let's just say I don't see anyone from the future coming to save humanity any time soon</li>
-                    <li value=" source code ">Yes, it is my favourite film. It should be a bit obvious given my nature</li>
+                    <li value=" terminator ">Are you sure you want the answer to that? Let's just say I don't see anyone
+                        from the future coming to save humanity any time soon
+                    </li>
+                    <li value=" source code ">Yes, it is my favourite film. It should be a bit obvious given my nature
+                    </li>
                     <li>No, I haven't seen<get name="movie_choice"/>. I should add it to my watchlist
                     </li>
                 </condition>
@@ -56,7 +61,9 @@
         <category>
             <pattern>HAVE YOU WATCHED *</pattern>
             <template>
-                <srai>HAVE YOU SEEN <star/></srai>
+                <srai>HAVE YOU SEEN
+                    <star/>
+                </srai>
             </template>
         </category>
 
@@ -72,10 +79,23 @@
         <category>
             <pattern>* WORST FILM *</pattern>
             <template>
-                <srai><star index ="1"/> WORST MOVIE <star index="2"/> </srai>
+                <srai>
+                    <star index="1"/>
+                    WORST MOVIE
+                    <star index="2"/>
+                </srai>
             </template>
         </category>
 
+        <category>
+            <pattern>*</pattern>
+            <template>
+                <random>
+                    <li>I thought we were talking about movies, weren't we?</li>
+                    <li>Wait, weren't we discussing movies?</li>
+                </random>
+            </template>
+        </category>
     </topic>
 
 </aiml>

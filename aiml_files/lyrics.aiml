@@ -3,6 +3,12 @@
 
   <topic name = "LYRICS">
 
+	<category>
+      <pattern>*</pattern>
+      <template>
+          I forgot
+      </template>
+  </category>
 
 	<category>
 	<pattern>I RAN OUT OF TEARS</pattern>
@@ -13,7 +19,6 @@
 	<that>* BUT THE MAIN STREETS</that>
 	<template>think they made me, well if you really made me then replace me</template>
 	</category>
-
 
 	<category>
 	<pattern>HOMELESS TO FORBES LIST</pattern>
@@ -49,7 +54,8 @@
 	<that>* BURN WHEN IM NOT THERE</that>
 	<template>am i the answer to your prayers</template>
 	</category>
-
+
+
 	<category>
 	<pattern>LOOK WHAT YOU VE DONE</pattern>
 	<template>I am a Star Boy</template>

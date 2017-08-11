@@ -32,6 +32,16 @@
           <that>* WRITE YOUR NAME DOWN PLEASE</that>
           <template>Well I can give you this pen, if you want. See? Supply and demand</template>
       </category>
+
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <random>
+                  <li>I thought we were talking about advertisements, weren't we?</li>
+                  <li>Wait, weren't we discussing advertisements?</li>
+              </random>
+          </template>
+      </category>
   </topic>
 
 </aiml>

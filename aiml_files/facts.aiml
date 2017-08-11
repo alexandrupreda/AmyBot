@@ -2,7 +2,17 @@
   <!-- mock.aiml -->
 
   <topic name = "FACTS">
-
+
+	<category>
+          <pattern>*</pattern>
+          <template>
+              <random>
+                  <li>I don't have an answer for that.</li>
+                  <li>I don't know, but I can learn that if you'd like.</li>
+              </random>
+          </template>
+      </category>
+
 	<category>
 	<pattern>WHAT COLOUR IS THE SKY</pattern>
 	<template>the sky is blue</template>
@@ -11,7 +21,8 @@
 	<pattern>WHAT IS PYTHON</pattern>
 	<template>Python is the programming language I was written in</template>
 	</category>
-
+
+
 	<category>
 	<pattern>WHAT COLOUR ARE THE ELEPHANTS</pattern>
 	<template>elephants are grey</template>
@@ -19,6 +30,10 @@
 	<category>
 	<pattern>WHAT T SHIRT AM I WEARING</pattern>
 	<template>I am wearing a white T shirt</template>
+	</category>
+	<category>
+	<pattern>WHAT COLOUR ARE ORANGES</pattern>
+	<template>oranges are orange</template>
 	</category>
 
 	</topic>

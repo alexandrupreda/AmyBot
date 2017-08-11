@@ -2,40 +2,6 @@
   <!-- hello.aiml -->
 
   <category>
-    <pattern>BYE</pattern>
-    <template>
-      <random>
-        <li>Good Bye</li>
-        <li>
-          Later, bye bye
-        </li>
-        <li>Bye now</li>
-      </random>
-    </template>
-  </category>
-
-  <category>
-    <pattern>BYE *</pattern>
-    <template>
-      <srai>BYE</srai>
-    </template>
-  </category>
-
-  <category>
-    <pattern>* BYE</pattern>
-    <template>
-      <srai>BYE</srai>
-    </template>
-  </category>
-  
-  <category>
-    <pattern>* BYE *</pattern>
-    <template>
-      <srai>BYE</srai>
-    </template>
-  </category>
-
-  <category>
     <pattern>GOOD AFTERNOON</pattern>
     <template>
       <srai>HELLO</srai>
@@ -47,7 +13,7 @@
     <template>
       <random>
         <li>
-          Mornin' <get name="user_name"/>
+          Mornin' <get name="name"/>
         </li>
         <li>Good morning to you as well</li>
       </random>
@@ -57,9 +23,9 @@
   <category>
     <pattern>HELLO</pattern>
     <template>
-      <condition name="user_name">
+      <condition name="name">
         <li value="">Hey there! Do you want to go through the induction or you already know how this goes?</li>
-        <li>Hi <get name ="user_name"/></li>
+        <li>Hi <get name ="name"/></li>
       </condition>
     </template>
   </category>

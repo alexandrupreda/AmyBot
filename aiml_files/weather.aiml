@@ -110,6 +110,15 @@
       <template>I can't say I have. I hear its kind of fluffy, but also to avoid the yellow kind</template>
     </category>
 
+    <category>
+      <pattern>*</pattern>
+      <template>
+          <random>
+              <li>I thought we were talking about the weather, weren't we?</li>
+              <li>Wait, weren't we discussing the weather?</li>
+          </random>
+      </template>
+  </category>
     
   </topic>
 </aiml>

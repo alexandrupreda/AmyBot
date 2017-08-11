@@ -8,7 +8,7 @@
         <li>I'm here!</li>
         <li>Yes sir</li>
         <li>Listening...</li>
-        <li>Awating instructions</li>
+        <li>Awaiting instructions</li>
         <li>Yes?</li>
       </random>
     </template>
@@ -21,7 +21,7 @@
     </template>
   </category>
   
-  <!--KEY PHRASE: Lets talk about...-->
+  <!--KEY PHRASE: Let's talk about...-->
   <category>
     <pattern>LET US TALK ABOUT *</pattern>
     <template>
@@ -73,15 +73,20 @@
   <!--___________________________________-->
   
   
-  
-  
   <category>
     <pattern>HOW ABOUT WE * SOMETHING ELSE</pattern>
     <template>
       <random>
-        <li>Changing topic...</li>
-        <li>Alright, what do you want to talk about?</li>
+        <li>As you wish</li>
+        <li>If that's what you want to do</li>
       </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* CHANGE THE TOPIC</pattern>
+    <template>
+      <srai>HOW ABOUT WE <star/> SOMETHING ELSE</srai>
     </template>
   </category>
 
@@ -124,7 +129,7 @@
     <pattern>*</pattern>
     <template>
       <random>
-        <li><get name="user_name"/> I'm not following</li>
+        <li>I'm not following</li>
         <li>Sorry, I didn't get that</li>      
       </random>
     </template>

@@ -71,7 +71,7 @@ kernel.bootstrap(learnFiles=lib, commands="load aiml b")
 kernel.setPredicate("amy_name", "AmyBot")
 kernel.setPredicate("amy_short", "Amy")
 kernel.setPredicate("creator", "Alexandru Preda")
-kernel.setPredicate("user_name", "Alex")
+kernel.setPredicate("name", "Alex")
 kernel.setPredicate("movie_choice", "")
 
 # kernel now ready for use
