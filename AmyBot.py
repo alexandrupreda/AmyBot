@@ -21,8 +21,7 @@ brain = "bot_brain.brn"
 # https://stackoverflow.com/questions/185936/delete-folder-contents-in-python
 def emptyAudioFolder():
     import os, shutil
-    folder = os.path.abspath("audio_files")
-    print folder
+    folder = os.path.abspath("audio_files\\")
     for the_file in os.listdir(folder):
         file_path = os.path.join(folder, the_file)
         try:
