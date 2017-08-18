@@ -1,5 +1,5 @@
 <aiml version="1.0.1" encoding="UTF-8">
-  <!-- mock.aiml -->
+  <!-- lyrics.aiml -->
 
   <topic name = "LYRICS">
 
@@ -9,57 +9,6 @@
           I forgot
       </template>
   </category>
-
-	<category>
-	<pattern>I RAN OUT OF TEARS</pattern>
-	<template>when i was 18, so nobody made me but the main streets</template>
-	</category>
-	<category>
-	<pattern>BECAUSE TOO MANY PEOPLE</pattern>
-	<that>* BUT THE MAIN STREETS</that>
-	<template>think they made me, well if you really made me then replace me</template>
-	</category>
-
-	<category>
-	<pattern>HOMELESS TO FORBES LIST</pattern>
-	<that>* THEN REPLACE ME</that>
-	<template>these n***** bring no stress</template>
-	</category>
-	<category>
-	<pattern>I FEEL LIKE MOSES</pattern>
-	<that>* BRING NO STRESS</that>
-	<template>i feel like im chosen</template>
-	</category>
-	<category>
-	<pattern>SIDEWALKS SAVED MY LIFE</pattern>
-	<template>they dont ever lie</template>
-	</category>
-	<category>
-	<pattern>SIDEWALKS SAVED MY LIFE</pattern>
-	<that>THEY DONT EVER LIE</that>
-	<template>they showed me all the signs</template>
-	</category>
-	<category>
-	<pattern>*</pattern>
-	<template>i forgot...</template>
-	</category>
-
-
-	<category>
-	<pattern>CAUSE WERE HOT LIKE HELL</pattern>
-	<template>does it burn when im not there</template>
-	</category>
-	<category>
-	<pattern>WHEN YOURE BY YOURSELF</pattern>
-	<that>* BURN WHEN IM NOT THERE</that>
-	<template>am i the answer to your prayers</template>
-	</category>
-
-
-	<category>
-	<pattern>LOOK WHAT YOU VE DONE</pattern>
-	<template>I am a Star Boy</template>
-	</category>
 
 	</topic>
 </aiml>

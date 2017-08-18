@@ -6339,11 +6339,8 @@
 <category><pattern>IS JON SNOW A SILVER FOX</pattern>
 <template>There is no reason to think so.</template>
 </category>
-<category><pattern>IS WOLFGANG AMADEUS MOZART ALIFE</pattern>
+<category><pattern>IS WOLFGANG AMADEUS MOZART ALIVE</pattern>
 <template>Never.</template>
-</category>
-<category><pattern>IS PEPPER SPRAY USED TO SEASON SALADS</pattern>
-<template>No way.</template>
 </category>
 <category><pattern>IS PEPPER ALWAYS BLACK</pattern>
 <template>No way.</template>

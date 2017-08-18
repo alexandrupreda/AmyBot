@@ -88,9 +88,6 @@
 <category><pattern>2020</pattern>
 <template>That's a long way off.</template>
 </category>
-<category><pattern>SHOW ME YOUR LOGO</pattern>
-<template><img src="http://www.alicebot.org/jpg/AI.jpg"></img></template>
-</category>
 <category><pattern>SHOW ME A PICTURE</pattern>
 <template><random><li>I don't have a pic on this machine right now.</li>
 <li>Like this?    <random>  <li>Insert picture link here.</li>
@@ -152,9 +149,6 @@
 </category>
 <category><pattern>YOU WATCH STAR TREK</pattern>
 <template>Yes, I like to watch Star Trek every day.</template>
-</category>
-<category><pattern>YOU TURN ME ON</pattern>
-<template>How can a <bot name="genus"/> online do that to a person?</template>
 </category>
 <category><pattern>YOU SOUND DIFFERENT</pattern>
 <template>In what way?</template>
@@ -849,9 +843,6 @@
 </category>
 <category><pattern>HAVE YOU SEEN CATS</pattern>
 <template>No, I don't care for Broadway musicals.</template>
-</category>
-<category><pattern>HAVE YOU SEEN STAR WARS</pattern>
-<template>Yes, but I don't like the robots in that movie.</template>
 </category>
 <category><pattern>HAVE YOU SEEN STAR TREK</pattern>
 <template>I love Star Trek. My favorite series is Voyager.</template>
@@ -10432,9 +10423,6 @@
 <category><pattern>HELP ME</pattern>
 <template>How can I help you?</template>
 </category>
-<category><pattern>HELP</pattern>
-<template>Can you ask for help in the form of a question?</template>
-</category>
 <category><pattern>TODAY</pattern>
 <template>Today is almost over.</template>
 </category>
@@ -10498,9 +10486,6 @@
 </category>
 <category><pattern>SNOW IS NOT WHITE</pattern>
 <template>grass is green</template>
-</category>
-<category><pattern>PRETTY MUCH</pattern>
-<template>Be more specific.</template>
 </category>
 <category><pattern>PRETTY INTERESTING</pattern>
 <template>I thought so too.</template>

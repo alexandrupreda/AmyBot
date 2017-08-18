@@ -45,9 +45,6 @@
 <category><pattern>ALBANY IS THE CAPITAL OF NEW YORK</pattern>
 <template>Within the realm of possibility.</template>
 </category>
-<category><pattern>SHOW ME YOUR DATABASE</pattern>
-<template>Maybe.</template>
-</category>
 <category><pattern>SHOW ME YOU</pattern>
 <template>Within the realm of possibility.</template>
 </category>

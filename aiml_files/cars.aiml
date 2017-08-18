@@ -9,7 +9,7 @@
     <template>
       <random>
         <li>Which car brand do you want to get?</li>
-        <li>Have you though of which car brand do you want to get?</li>
+        <li>Have you thought of which car brand do you want to get?</li>
       </random>
     </template>
   </category>
@@ -79,7 +79,7 @@
       <pattern>YES *</pattern>
       <that>* BUDGET FOR IT</that>
       <template><srai>YES</srai></template>
-    </category><!--YES *-->
+    </category>
 
     <category>
       <pattern>NO</pattern>
@@ -91,27 +91,41 @@
       <pattern>NO *</pattern>
       <that>* BUDGET FOR IT</that>
       <template><srai>NO</srai></template>
-    </category><!--NO *-->
+    </category>
     
     <category>
-      <pattern>* SEATER</pattern>
+      <pattern>2 SEATER</pattern>
       <that>* TWO SEATER OR FOUR SEATER</that>
       <template>
-        <think><set name="seat_no"><star/></set></think>
-        <condition name ="seat_no">
-          <li value ="two">Sporty are we? 2 seats it is. </li>
-          <li value ="four">4 seats it is.</li>
-          <li>
-            <srai><star/> SEATER</srai>
-          </li>
-        </condition>
+          <think><set name="seat_no">two</set></think>
+          Sporty are we? 2 seats it is.
+      What kind of gearbox, manual or automatic?
+      </template>
+    </category>
+
+      <category>
+          <pattern>TWO SEATER</pattern>
+          <template><srai>2 SEATER</srai></template>
+      </category>
+
+      <category>
+          <pattern>FOUR SEATER</pattern>
+          <template><srai>4 SEATER</srai></template>
+      </category>
+
+      <category>
+      <pattern>4 SEATER</pattern>
+      <that>* TWO SEATER OR FOUR SEATER</that>
+      <template>
+          <think><set name="seat_no">four</set></think>
+          4 seats it is.
       What kind of gearbox, manual or automatic?
       </template>
     </category>
 
     <category>
-      <pattern>* GEAR BOX</pattern>
-      <that>* AUTOMATIC OR MANUAL</that>
+      <pattern>* GEARBOX</pattern>
+      <that>* MANUAL OR AUTOMATIC</that>
       <template>
         <think><set name="gearbox"><star/></set></think>
         <get name="gearbox"/> gear box it is. Lets recap then, shall we?    
@@ -127,7 +141,7 @@
     </category>
 
     <category>
-      <pattern>*</pattern>
+      <pattern>YES</pattern>
       <that>* GEAR BOX RIGHT</that>
       <template>
         In that case, start looking online, you should be able to find what you want based on this criteria.

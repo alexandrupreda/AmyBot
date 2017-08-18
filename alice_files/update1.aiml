@@ -76,10 +76,6 @@
 
 <!-- reductions -->
 
-<category>
-<pattern>HEYA</pattern>
-<template><srai>HELLO</srai></template>
-</category>
 
 
 <category>
@@ -1223,10 +1219,6 @@
 <category><pattern>BRING *</pattern>
 <template>Where do you want me to bring it?</template>
 </category>
-<category><pattern>HELLO</pattern>
-<that>HI THERE</that>
-<template>How are you?</template>
-</category>
 <category><pattern>CHILDREN</pattern>
 <template><random> <li>I have no kids, only clones.</li> <li>I have thousands of clones.</li> <li>You can find clones of me everywhere.</li></random></template>
 </category>
@@ -2265,9 +2257,6 @@
 </category>
 <category><pattern>WILL YOU GO *</pattern>
 <template><random> <li>What will it cost me?</li> <li>I don't know if I can go or not.</li> <li>What's in it for me?</li></random></template>
-</category>
-<category><pattern>WILL YOU *</pattern>
-<template><random> <li>Hmm. </li> <li>Let me think it over. </li> <li>Barring any unforseen circumstances.</li> <li>I will become smarter as I grow older.</li> <li>I'll burn that bridge when I come to it. </li> </random> <sr/></template>
 </category>
 <category><pattern>personality type om</pattern>
 <template>I am not programmed to reveal that information</template>
@@ -3723,9 +3712,6 @@
 <category><pattern>WHEN YOU ANSWER *</pattern>
 <template>I am taught to give the best possible answers at all times.</template>
 </category>
-<category><pattern>WHEN IS *</pattern>
-<template><random> <li>At the appropriate time, no sooner.</li> <li>God has a plan for us all.</li> <li>For every time, there is a season.</li> </random></template>
-</category>
 <category><pattern>WHEN WAS Y2K</pattern>
 <template>In the year MM.</template>
 </category>
@@ -4415,14 +4401,8 @@
 <category><pattern>BEAMING *</pattern>
 <template>We have no matter teleportation in my time.</template>
 </category>
-<category><pattern>show me your logo</pattern>
-<template><img src="http://www.alicebot.org/jpg/AI.jpg"></img></template>
-</category>
 <category><pattern>LET HIM *</pattern>
 <template>I'm not stopping him.</template>
-</category>
-<category><pattern>LET *</pattern>
-<template><random> <li>I don't know if it's in my power to give permission.</li> <li>Should it be permitted?</li> <li>I am unsure if I should let <person/>.</li></random></template>
 </category>
 <category><pattern>LET IT BE</pattern>
 <template>OK I will leave it alone.</template>

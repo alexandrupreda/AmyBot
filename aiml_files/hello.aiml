@@ -23,11 +23,13 @@
   <category>
     <pattern>HELLO</pattern>
     <template>
-      <condition name="name">
-        <li value="">Hey there! Do you want to go through the induction or you already know how this goes?</li>
-        <li>Hi <get name ="name"/></li>
-      </condition>
+        Hi <get name ="name"/>
     </template>
+  </category>
+
+  <category>
+    <pattern>HELP</pattern>
+    <template>Hey there! Do you want to go through the induction or you already know how this goes?</template>
   </category>
 
   <category>
@@ -104,7 +106,7 @@
       <srai>HELLO</srai>
     </template>
   </category>
-  
+
   <!--INTRODUCTION-->
 
   <category>
@@ -114,7 +116,6 @@
       My name is AmyBot, I was created by Alexandru Preda as part of his MSc dissertation.
       I'm here to chat with you about stuff and things, nothing too complex though, my knowledge is limited.
       If you've got a topic in mind just say "Lets talk about". Otherwise, just say 'tips' and I'll help you out.
-      Now, mind if I ask you a few basic questions?
     </template>
   </category>
 
@@ -141,7 +142,7 @@
       <srai>YES</srai>
     </template>
   </category>
-  
+
   <category>
     <pattern>NO</pattern>
     <that>* DO YOU WANT TO GO THROUGH THE INDUCTION OR YOU ALREADY KNOW HOW THIS GOES</that>
@@ -170,25 +171,6 @@
     <template>
       <srai>NO</srai>
     </template>
-  </category>
-
-
-  <category>
-    <pattern>SURE</pattern>
-    <that>* FEW BASIC QUESTIONS</that>
-    <template>What's your name?</template>
-  </category>
-
-  <category>
-    <pattern>OK</pattern>
-    <that>* FEW BASIC QUESTIONS</that>
-    <template><srai>SURE</srai></template>
-  </category>
-  
-  <category>
-    <pattern>NO</pattern>
-    <that>* FEW BASIC QUESTIONS</that>
-    <template>Alright then</template>
   </category>
 
 </aiml>

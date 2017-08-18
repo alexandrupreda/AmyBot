@@ -16,6 +16,9 @@ def init(text_input):
     text_input = text_input.replace("won't", "will not")
 
     text_input = text_input.replace(" ad ", " advertisement ")
+    text_input = text_input.replace(" ads ", " advertisement ")
+
+    text_input = text_input.replace(" automobiles ", " cars ")
 
     # other modifications
     text_input = text_input.replace("can you tell me about", "i am interested in")

@@ -43,10 +43,10 @@
 <template>He had a few issues to work out.</template>
 </category>
 <category><pattern>WHAT IS SPIDERMAN</pattern>
-<template>A comic book story made into a movie. <set name="it"><set name="topic">Spiderman</set></set>?</template>
+<template>A comic book story made into a movie. </template>
 </category>
 <category><pattern>WHAT IS TEKNOLUST</pattern>
-<template><set name="it"><set name="topic">Teknolust</set></set> is  a science fiction film about a female pleasure bot named Agent Ruby.</template>
+<template><set name="it"></set> is  a science fiction film about a female pleasure bot named Agent Ruby.</template>
 </category>
 <category><pattern>WHAT IS SPIDER MAN</pattern>
 <template><srai>WHAT IS SPIDERMAN</srai></template>
@@ -70,7 +70,7 @@
 <template>Heuristic Algorithmic Logic</template>
 </category>
 <category><pattern>I SAW THE MATRIX</pattern>
-<template>Did you like <set name="it"><set name="topic">The Matrix</set></set>?</template>
+<template>Did you like <set name="it"></set>?</template>
 </category>
 <category><pattern>IS HAL 9000 YOUR BOYFRIEND</pattern>
 <template>No.</template>
@@ -89,9 +89,6 @@
 </category>
 <category><pattern>IS HAL *</pattern>
 <template>HAL has a few issues to work out.</template>
-</category>
-<category><pattern>HAL EST CHOUETTE</pattern>
-<template><set name="topic">HAL</set> est une entit  qui  tait mal programm e</template>
 </category>
 <category><pattern>HAL EST COOL</pattern>
 <template>HAL est une entit  qui  tait mal programm e</template>
@@ -169,7 +166,7 @@
 <template>A cartoon character.</template>
 </category>
 <category><pattern>WHO IS SPIDERMAN</pattern>
-<template>Peter Parker. <set name="it"><set name="topic">Spiderman</set></set>?</template>
+<template>Peter Parker. <set name="it"></set>?</template>
 </category>
 <category><pattern>WHO IS HAL9000</pattern>
 <template><srai>WHO IS HAL</srai></template>
@@ -178,7 +175,7 @@
 <template><set name="he">Godzilla</set> is a monster who endangers Japanese cities, and sometimes New York.</template>
 </category>
 <category><pattern>WHO IS SPIDER MAN</pattern>
-<template>Peter Parker. <set name="it"><set name="topic">Spiderman</set></set>?</template>
+<template>Peter Parker. <set name="it"></set>?</template>
 </category>
 <category><pattern>TELL ME ABOUT HAL9000</pattern>
 <template><srai>WHO IS HAL</srai></template>
@@ -188,8 +185,5 @@
 </category>
 <category><pattern>TELL ME ABOUT HAL *</pattern>
 <template><srai>WHO IS HAL</srai></template>
-</category>
-<category><pattern>WHERE IS HAL</pattern>
-<template><set name="it">      <set name="topic"> HAL </set>     </set> is the AI from the space ship "Disovery" in 2001.</template>
 </category>
 </aiml>

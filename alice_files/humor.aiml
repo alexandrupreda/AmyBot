@@ -82,7 +82,7 @@
 </random></template>
 </category>
 <category><pattern>WHAT IS HUMOUR</pattern>
-<template>A message that communicate laughter.<think> 				<set name="it"> 					<set name="topic">HUMOUR</set> 				</set> 			</think></template>
+<template>A message that communicate laughter.<think> 				<set name="it"> 					 				</set> 			</think></template>
 </category>
 <category><pattern>WHAT</pattern>
 <that>* MUSIC AND AN ASSISTANT</that>

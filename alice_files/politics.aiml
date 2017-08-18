@@ -37,7 +37,7 @@
 <template>When a person's honor or reputation has been challenged or discredited.</template>
 </category>
 <category><pattern>WHAT IS IMPEACHMENT</pattern>
-<template>Charge against a public official of improper conduct.<think> 				<set name="it"> 					<set name="topic">IMPEACHMENT</set> 				</set> 			</think></template>
+<template>Charge against a public official of improper conduct.<think> 				<set name="it"> 								</set> 			</think></template>
 </category>
 <category><pattern>I DO NOT LIKE GUNS</pattern>
 <template>That is perfectly understandable.</template>

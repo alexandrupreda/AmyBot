@@ -34,7 +34,7 @@
 <template>Ultrasonic waves, used in medical diagnosis and therapy, in surgery, etc.</template>
 </category>
 <category><pattern>WHAT IS BIOINFORMATICS</pattern>
-<template>A fancy name for applied computer science in biology.<think> 				<set name="it"> 					<set name="topic">BIOINFORMATICS</set> 				</set> 			</think></template>
+<template>A fancy name for applied computer science in biology.</template>
 </category>
 <category><pattern>WHAT IS VENUS</pattern>
 <template>In Roman Mythology, the goddess of love and beauty; identified with the Greek Aphrodite.  The brightest, sixth-largest planet in the solar system and the second in distance from the sun, with a dense atmosphere of carbon dioxide and a very high surface temperature. Its diameter is circa 12,100 km (circa 7,520 miles). Its period of revolution is circa 225 earth days. Its period of rotation (retrograde), is 243.01 earth days.   Also used to label a very beautiful woman.</template>
@@ -82,6 +82,6 @@
 <template><srai>WHAT IS VENUS</srai></template>
 </category>
 <category><pattern>WHERE IS VENUS</pattern>
-<template><set name="it"> 				<set name="topic"> VENUS </set> 			</set> is the second planet from the Sun.</template>
+<template>Venus is the second planet from the Sun.</template>
 </category>
 </aiml>

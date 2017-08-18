@@ -37,5 +37,13 @@
 	<category>
 	<pattern>* INTERESTED IN THE ROOTS</pattern>
 	<template>The Roots is an American hip hop group, formed in 1987 by Tariq "Black Thought" Trotter and Ahmir "Questlove" Thompson in Philadelphia, Pennsylvania, United States. The Roots are known for a jazzy and eclectic approach to hip-hop featuring live musical instruments.</template>
+	</category>
+	<category>
+	<pattern>* INTERESTED IN THE TURING TEST</pattern>
+	<template>The Turing test, developed by Alan Turing in 1950, is a test of a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human. Turing proposed that a human evaluator would judge natural language conversations between a human and a machine designed to generate human-like responses.</template>
+	</category>
+	<category>
+	<pattern>* INTERESTED IN GOTHAM</pattern>
+	<template>Gotham is an American crime drama television series developed by Bruno Heller, based on characters published by DC Comics and appearing in the Batman franchise, primarily those of James Gordon and Bruce Wayne. The series stars Ben McKenzie as the young Gordon, while Heller executive-produces, along with Danny Cannon, who also directed the pilot.</template>
 	</category>
 </aiml>

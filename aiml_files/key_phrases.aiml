@@ -1,140 +1,149 @@
 <aiml version="1.0.1" encoding="UTF-8">
-  <!-- key_phrases.aiml -->
+    <!-- key_phrases.aiml -->
 
-  <category>
-    <pattern>AMY</pattern>
-    <template>
-      <random>
-        <li>I'm here!</li>
-        <li>Yes sir</li>
-        <li>Listening...</li>
-        <li>Awaiting instructions</li>
-        <li>Yes?</li>
-      </random>
-    </template>
-  </category>
+    <category>
+        <pattern>AMY</pattern>
+        <template>
+            <random>
+                <li>I'm here!</li>
+                <li>Listening...</li>
+                <li>Awaiting instructions</li>
+                <li>Yes?</li>
+            </random>
+        </template>
+    </category>
 
-  <category>
-    <pattern>AMYBOT</pattern>
-    <template>
-      <srai>AMY!</srai>
-    </template>
-  </category>
-  
-  <!--KEY PHRASE: Let's talk about...-->
-  <category>
-    <pattern>LET US TALK ABOUT *</pattern>
-    <template>
-      <random>
-        <li>Sure, let's talk about <set name = "topic"><star/></set></li>
-        <li>Fine, <set name = "topic"><star/></set> it is</li>
-        <li>Alright then, what about <set name = "topic"><star/></set></li>
-        <li>We can talk about <set name = "topic"><star/></set></li>
-      </random>
-    </template>
-  </category>
+    <!--KEY PHRASE: Let's talk about...-->
+    <category>
+        <pattern>LET US TALK ABOUT *</pattern>
+        <template>
+            <random>
+                <li>Sure, let's talk about <set name="topic"><star/></set></li>
+                <li>OK, <set name="topic"><star/></set> sounds like a good topic</li>
+                <li>Sure thing, <set name="topic"><star/></set> it is
+                </li>
+            </random>
+        </template>
+    </category>
 
-  <category>
-    <pattern>LET US DISCUSS *</pattern>
-    <template>
-      <srai>
-        LET US TALK ABOUT <star/>
-      </srai>
-    </template>
-  </category>
+    <category>
+        <pattern>LET US DISCUSS *</pattern>
+        <template>
+            <srai>
+                LET US TALK ABOUT
+                <star/>
+            </srai>
+        </template>
+    </category>
 
-  <category>
-    <pattern>* LET US DISCUSS *</pattern>
-    <template>
-      <srai>
-        LET US TALK ABOUT <star index="2"/>
-      </srai>
-    </template>
-  </category>
+    <category>
+        <pattern>* LET US DISCUSS *</pattern>
+        <template>
+            <srai>
+                LET US TALK ABOUT
+                <star index="2"/>
+            </srai>
+        </template>
+    </category>
 
-  <category>
-    <pattern>* LET US TALK ABOUT *</pattern>
-    <template>
-      <srai>
-        LET US TALK ABOUT <star index ="2"/>
-      </srai>
-    </template>
-  </category>
+    <category>
+        <pattern>* LET US TALK ABOUT *</pattern>
+        <template>
+            <srai>
+                LET US TALK ABOUT
+                <star index="2"/>
+            </srai>
+        </template>
+    </category>
 
-  <category>
-    <pattern>LET US TALK *</pattern>
-    <template>
-      <srai>
-        LET US TALK ABOUT <star/>
-      </srai>
-    </template>
-  </category>
-  
-  <!--___________________________________-->
-  
-  
-  <category>
-    <pattern>HOW ABOUT WE * SOMETHING ELSE</pattern>
-    <template>
-      <random>
-        <li>As you wish</li>
-        <li>If that's what you want to do</li>
-      </random>
-    </template>
-  </category>
+    <category>
+        <pattern>LET US TALK *</pattern>
+        <template>
+            <srai>
+                LET US TALK ABOUT
+                <star/>
+            </srai>
+        </template>
+    </category>
 
-  <category>
-    <pattern>* CHANGE THE TOPIC</pattern>
-    <template>
-      <srai>HOW ABOUT WE <star/> SOMETHING ELSE</srai>
-    </template>
-  </category>
+    <category>
+        <pattern>HOW ABOUT WE * SOMETHING ELSE</pattern>
+        <template>
+            <random>
+                <li>As you wish</li>
+                <li>If that's what you want to do</li>
+            </random>
+        </template>
+    </category>
 
-  <category>
-    <pattern>WHAT WERE WE TALKING ABOUT</pattern>
-    <template>
-      <random>
-        <li>
-          I think we were talking about <get name="topic"/>
-        </li>
-        <li>
-          You were saying something about <get name="topic"/>
-        </li>
-      </random>
-    </template>
-  </category>
+    <category>
+        <pattern>* CHANGE THE TOPIC</pattern>
+        <template>
+            <srai>HOW ABOUT WE<star/>SOMETHING ELSE
+            </srai>
+        </template>
+    </category>
 
-  <category>
-    <pattern>TIPS</pattern>
-    <template>
-      <random>
-        <li>Say 'Lets talk about...' so we can dive into a topic</li>
-      </random>
-    </template>
-  </category>
-  
-  <category>
-    <pattern>TOPIC OF CONVERSATION</pattern>
-    <template>
-      <srai>WHAT WERE WE TALKING ABOUT</srai>
-    </template>
-  </category>
+    <category>
+        <pattern>* LET US TALK ABOUT SOMETHING ELSE</pattern>
+        <template>
+            <srai>
+                HOW ABOUT WE
+                <star index="1"/>
+                SOMETHING ELSE
+            </srai>
+        </template>
+    </category>
 
-  <category>
-    <pattern>WAKE UP</pattern>
-    <template>I'm here, I'm here</template>
-  </category>
+    <category>
+        <pattern>WHAT WERE WE TALKING ABOUT</pattern>
+        <template>
+            <condition name="topic">
+                <li value="">Nothing actually.</li>
+                <li>
+                    <random>
+                        <li>
+                            I think we were talking about
+                            <get name="topic"/>
+                        </li>
+                        <li>
+                            You were saying something about
+                            <get name="topic"/>
+                        </li>
+                    </random>
+                </li>
+            </condition>
 
-  <category>
-    <pattern>*</pattern>
-    <template>
-      <random>
-        <li>I'm not following</li>
-        <li>Sorry, I didn't get that</li>      
-      </random>
-    </template>
-  </category>
 
-  
+        </template>
+    </category>
+
+    <category>
+        <pattern>TIPS</pattern>
+        <template>
+            <random>
+                <li>Say 'Lets talk about...' so we can dive into a topic</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TOPIC OF CONVERSATION</pattern>
+        <template>
+            <srai>WHAT WERE WE TALKING ABOUT</srai>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li>I'm not following</li>
+                <li>Sorry, I didn't get that</li>
+            </random>
+        </template>
+    </category>
+
 
 </aiml>

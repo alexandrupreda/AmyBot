@@ -19,32 +19,14 @@
         <srai>HAVE YOU CHECKED THE FORECAST FOR <star/></srai>
       </template>
     </category>
-    
-    <category>   
-      <pattern>THE WEATHER * *</pattern>
-      <template>
-        <random>
-          <li>
-            Indeed, it looks pretty <star index="2"/> today
-          </li>
-          <li>True, it <star index="1"/> <star index="2"/> right now</li>
-        </random>
-      </template>
-    </category>
 
     <category>
-      <pattern>* FAVORITE SEASON</pattern>
+      <pattern>* FAVOURITE SEASON</pattern>
       <template>
           I like it when its chilly. Ask me 'why'
       </template>
     </category>
 
-    <category>
-      <pattern>* FAVOURITE SEASON</pattern>
-      <template>
-          <srai><star/> FAVORITE SEASON</srai>
-      </template>
-    </category>
 
     <category>
       <pattern>WHY</pattern>
@@ -86,21 +68,21 @@
 
     <category>
       <pattern>WHAT IS THE COLDEST SEASON</pattern>
-      <template>That would be winter, mid January maybe</template>
+      <template>That would be winter</template>
     </category>
 
     <category>
       <pattern>WHAT IS THE HOTTEST SEASON</pattern>
-      <template>That would be summer, mid July maybe</template>
+      <template>That would be summer</template>
     </category>
 
     <category>
       <pattern>* WEATHER AFFECTS THE WAY PEOPLE *</pattern>
-      <template>Definately, I think weather plays a somewhat important factor in human behaviour.</template>
+      <template>Definitely, I think weather plays a somewhat important factor in human behaviour.</template>
     </category>
 
     <category>
-      <pattern>* WINTER ACTIVITY</pattern>
+      <pattern>* WINTER SPORT</pattern>
       <template>I can't do sports, I'm to busy communicating. But I would like to try snowboarding
        if technology advances to the point where I could do that</template>
     </category>

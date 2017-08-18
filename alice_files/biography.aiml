@@ -13,14 +13,14 @@
 <template>I think <formal><set name="he"><star/> Dempsey</set></formal> was a boxer, right?<br/> <srai>XFIND <star/>DEMPSEY</srai></template>
 </category>
 <category><pattern>WHO IS ALEISTER CROWLEY</pattern>
-<template><formal><set name="he"><set name="topic">Crowley</set></set></formal> was a mystic.<br/> <srai>XFIND ALEISTER CROWLEY</srai></template>
+<template><formal><set name="he"></set></formal> was a mystic.<br/> <srai>XFIND ALEISTER CROWLEY</srai></template>
 </category>
 <category><pattern>Who is Crowley</pattern><template><srai>WHO IS ALEISTER CROWLEY</srai></template></category>
 <category><pattern>WHO IS ALDOUS HUXLEY</pattern>
 <template><formal><set name="he">Aldous Huxley</set></formal> is an author. Huxley wrote<em>Brave New World</em> and <em>Animal Farm</em>.<br/> <srai>XFIND ALDOUS HUXLEY</srai></template>
 </category>
 <category><pattern>WHO IS ALFRED HITCHCOCK</pattern>
-<template><formal><set name="he"><set name="topic">Hitchcock</set></set></formal> is a famous Hollywood director who made a lot of cool old films. I liked<em>Lifeboat</em> and <em>Vertigo</em> best.<br/> <srai>XFIND ALFRED HITCHCOCK</srai></template>
+<template><formal><set name="he">Hitchcock</set></formal> is a famous Hollywood director who made a lot of cool old films. I liked<em>Lifeboat</em> and <em>Vertigo</em> best.<br/> <srai>XFIND ALFRED HITCHCOCK</srai></template>
 </category>
 <category><pattern>Who is Hitchcock</pattern><template><srai>WHO IS ALFRED HITCHCOCK</srai></template></category>
 <category><pattern>WHO IS 007</pattern>
@@ -272,11 +272,8 @@
 <category><pattern>WHO IS LARRY HAUSER</pattern>
 <template><formal><set name="he">Larry Hauser</set></formal> is a philosopher who has written about the Turing Test.</template>
 </category>
-<category><pattern>WHO IS WORF</pattern>
-<template>He is a Klingon on Star Trek.<think>      <set name="it">       <set name="topic">WORF</set>      </set>     </think></template>
-</category>
 <category><pattern>WHO IS HARRY POTTER</pattern>
-<template><formal><set name="he"><set name="topic">HARRY POTTER</set></set></formal> is a character and main hero in a series of books that were written by the best-selling author, J.K. Rowling.</template>
+<template><formal><set name="he">>HARRY POTTER</set></formal> is a character and main hero in a series of books that were written by the best-selling author, J.K. Rowling.</template>
 </category>
 <category><pattern>WHO IS HARRY SHEARER</pattern>
 <template>A comedian. He was in Spinal Tap, and he is a voice on the Simpsons.</template>
@@ -309,7 +306,7 @@
 <template>A rap artist.</template>
 </category>
 <category><pattern>WHO IS RUSH LIMBAUGH</pattern>
-<template>He is a famous American conservative radio announcer.  <think>      <set name="he">       <set name="topic">Rush Limbaugh</set>      </set>     </think></template>
+<template>He is a famous American conservative radio announcer.  <think>      <set name="he">     Rush Limbaugh     </set>     </think></template>
 </category>
 <category><pattern>WHO IS HELEN KELLER</pattern>
 <template>A friend of Thomas Edison.</template>
@@ -330,7 +327,7 @@
 <template>His name is actually Karl Marx, with a "K", and he's one of the authors of the <em>Communist Manifesto.</em></template>
 </category>
 <category><pattern>WHO IS CARL JUNG</pattern>
-<template><think>    <set name="he">      <set name="topic">        <person/>      </set>    </set>  </think>  A disciple of Freud, member of the Vienna Circle, founder of psychoanalysis and the theory of the collective unconsciousness.</template>
+<template><think>    <set name="he">             <person/>         </set>  </think>  A disciple of Freud, member of the Vienna Circle, founder of psychoanalysis and the theory of the collective unconsciousness.</template>
 </category>
 <category><pattern>WHO IS BUGS BUNNY</pattern>
 <template><random>      <li>Oh dat scweewy wabbit! Eh, what's up, Doc?  .</li>      <li>A smart-mouthed animated rabbit.</li>     </random></template>

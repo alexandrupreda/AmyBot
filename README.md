@@ -9,6 +9,7 @@ University of Essex, 2017
 This project contains external libraries or files, which have been attached to the project.
 Please note that there is no intention of plagiarism, as each of them have been credited and attached for academic/educational purposes only.
 
+- Slightly modified versions of the files or the original ALICE chatbot have also been added -
 
 Dependencies (to install)
 Python 2.7
@@ -49,22 +50,21 @@ https://pypi.python.org/pypi/wikipedia/
 (voice can be turned on/off by changing the value of 'voiceOnline' in IO.py)
 
 KNOWLEDGE BASE
+
 key_phrases.aiml
 
-[AMY],[AMYBOT]
+[AMY]
 
 [LET US TALK ABOUT *], [* LET US TALK ABOUT *] - assigns topic of conversation
 [LET US DISCUSS *], [* LET US DISCUSS *]
 [LET US TALK* ]
 
-[* TALK ABOUT SOMETHING ELSE]
+[HOW ABOUT WE * SOMETHING ELSE], [* CHANGE THE TOPIC], [* LET US TALK ABOUT SOMETHING ELSE]
 
 [WHAT WERE WE TALKING ABOUT]
 [TOPIC OF CONVERSATION]
 
 [TIPS]
-
-[WAKE UP]
 
 [*] - unknown queries
 
@@ -75,9 +75,7 @@ hello.aiml
 [GOOD MORNING], [MORNING]
 
 [HELLO],[HELLO *] - induction (YEAH, SYRE, FINE, NO, NOPE, NAH, NOT *)
-	+ induction -> basic questions (SURE, OK, NO)
-		+ basic_info
-		- end
+	+ induction
 	- end
 [HEY], [HEY*] ,[HI],[HIYA],[WHAT IS UP], [WHAT IS NEW], [YO], [YOU ALRIGHT], [GOOD AFTERNOON]
 
@@ -174,7 +172,7 @@ wikipedia_results.aiml
 
 FUNCTIONS
 'learn'
-'reset' (not currently online)
+'reset'
 'interested in'
 'time'
 

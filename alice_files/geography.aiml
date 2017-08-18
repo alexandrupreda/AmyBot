@@ -267,29 +267,14 @@
 <category><pattern>WHAT IS THE CAPITAL _ OMAN</pattern>
 <template>Muscat.   <think>      <set name="it">       <set name="topic">oman</set>      </set>     </think></template>
 </category>
-<category><pattern>WHAT IS THE CAPITAL _ NORTHERN MARIANA *</pattern>
-<template>Saipan.   <think>      <set name="it">       <set name="topic">northern mariana islands</set>      </set>     </think></template>
-</category>
 <category><pattern>WHAT IS THE CAPITAL _ SAUDI ARABIA</pattern>
-<template>Riyadh, Saudi Arabia.  <think>      <set name="it">       <set name="topic">SAUDI ARABIA</set>      </set>     </think></template>
+<template>Riyadh, Saudi Arabia.</template>
 </category>
 <category><pattern>WHAT IS THE CAPITAL _ AUSTRIA</pattern>
-<template>The capital of Austria is Vienna.<think>      <set name="it">       <set name="topic">AUSTRIA</set>      </set>     </think></template>
+<template>The capital of Austria is Vienna.<think>      <set name="it">       AUSTRIA     </set>     </think></template>
 </category>
 <category><pattern>WHAT IS THE CAPITAL _ BELARUS</pattern>
 <template>The capital of Belarus is Minsk.</template>
-</category>
-<category><pattern>WHAT IS THE CAPITAL _ KAZAKSTAN</pattern>
-<template>Almaty.   <think>      <set name="it">       <set name="topic">kazakstan</set>      </set>     </think></template>
-</category>
-<category><pattern>WHAT IS THE CAPITAL _ BAHRAIN</pattern>
-<template>Manama.   <think>      <set name="it">       <set name="topic">bahrain</set>      </set>     </think></template>
-</category>
-<category><pattern>WHAT IS THE CAPITAL _ CAPE VERDE</pattern>
-<template>Praia.   <think>      <set name="it">       <set name="topic">cape verde</set>      </set>     </think></template>
-</category>
-<category><pattern>WHAT IS THE CAPITAL _ CHRISTMAS ISLAND</pattern>
-<template>The Settlement.   <think>      <set name="it">       <set name="topic">christmas island</set>      </set>     </think></template>
 </category>
 <category><pattern>WHAT IS THE CAPITAL _ MACAU</pattern>
 <template>Macau.   <think>      <set name="it">       <set name="topic">macau</set>      </set>     </think></template>

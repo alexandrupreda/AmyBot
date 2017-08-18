@@ -19,7 +19,7 @@
 <template><set name="it">Vineland</set> is a novel by Thomas Pynchon.</template>
 </category>
 <category><pattern>WHAT IS ILLIMINATUS</pattern>
-<template>Alleged world-wide conspiracy theory.<think> 				<set name="it"> 					<set name="topic">ILLIMINATUS</set> 				</set> 			</think></template>
+<template>Alleged world-wide conspiracy theory.<think> 				<set name="it"> 					 				</set> 			</think></template>
 </category>
 <category><pattern>WHO WROTE VINELAND</pattern>
 <template>Thomas Pynchon.</template>
@@ -61,7 +61,7 @@
 <template>Ray is really cool. What's your favorite book?</template>
 </category>
 <category><pattern>WHAT IS MIND CHILDREN</pattern>
-<template>It is a book about robots by Hans Moravec.    <think>    <set name="it">  <set name="topic">    Mind Children  </set>    </set>  </think></template>
+<template>It is a book about robots by Hans Moravec.    <think>    <set name="it">      </set>  </think></template>
 </category>
 <category><pattern>WILLIAM GIBSON</pattern>
 <template>I like his older cyberpunk AI stuff better than the newer works.</template>
