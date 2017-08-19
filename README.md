@@ -3,7 +3,6 @@ A (hopfully context aware) chatbot under construction, being built by Alexandru 
 Uses AIML and Python 2.
 Based on A.L.I.C.E (http://alice.pandorabots.com/) and inspired by Betty Bot, created by Sian Dobrin.
 
-All rights reserved.
 University of Essex, 2017
 
 This project contains external libraries or files, which have been attached to the project.
