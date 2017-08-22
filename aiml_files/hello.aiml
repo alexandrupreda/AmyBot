@@ -28,11 +28,6 @@
   </category>
 
   <category>
-    <pattern>HELP</pattern>
-    <template>Hey there! Do you want to go through the induction or you already know how this goes?</template>
-  </category>
-
-  <category>
     <pattern>HELLO *</pattern>
     <template>
       <srai>HELLO</srai>
@@ -110,12 +105,17 @@
   <!--INTRODUCTION-->
 
   <category>
+    <pattern>HELP</pattern>
+    <template>Hey there! Do you want to go through the induction or you already know how this goes?</template>
+  </category>
+
+  <category>
     <pattern>YES</pattern>
     <that>* DO YOU WANT TO GO THROUGH THE INDUCTION OR YOU ALREADY KNOW HOW THIS GOES</that>
     <template>
       My name is AmyBot, I was created by Alexandru Preda as part of his MSc dissertation.
       I'm here to chat with you about stuff and things, nothing too complex though, my knowledge is limited.
-      If you've got a topic in mind just say "Lets talk about". Otherwise, just say 'tips' and I'll help you out.
+      If you've got a topic in mind just say "Let's talk about". Otherwise, just say 'tips' and I'll help you out.
     </template>
   </category>
 

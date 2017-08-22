@@ -1,7 +1,6 @@
 <aiml version="1.0.1" encoding="UTF-8">
   <!-- mock.aiml -->
 
-  <!--<topic name = "FACTS">-->
 
 	<category>
           <pattern>*</pattern>
@@ -46,5 +45,4 @@
 	<template>there are 24 hours in a day</template>
 	</category>
 
-	<!--</topic>-->
 </aiml>

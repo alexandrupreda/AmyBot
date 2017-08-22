@@ -21,7 +21,7 @@ def wiki(entry):
         summaryOneSent = wikipedia.summary(entry, sentences=1)
         summaryOneSent = removeBetweenBrackets(summaryOneSent)
         IO.botOutput(summaryOneSent)
-        IO.botOutput("Is this " + wikiPage.title + " you were looking for?(yes or no): ")
+        IO.botOutput("Is this " + wikiPage.title + " you were looking for? (yes or no): ")
         prompt = IO.userInput()
         if noAnswer(prompt):
             sentenceCounter = 0
@@ -53,8 +53,10 @@ def wiki(entry):
         writeToWikipediaResultsFile(entry, wikiPage, noOfSentences)
 
 
-def writeToWikipediaResultsFile(entry, wikiPage,noOfSentences):
-    filename = "aiml_files\\wikipedia_results.aiml"
+def writeToWikipediaResultsFile(entry, wikiPage, noOfSentences):
+    import os, sys
+    filename = os.path.dirname(os.path.realpath(sys.argv[0]))
+    filename = os.path.join(filename, "aiml_files", "wikipedia_results.aiml")
     stringToAdd = "\n\t<category>"
     stringToAdd += "\n\t<pattern>"
     stringToAdd += "* INTERESTED IN " + entry.upper()

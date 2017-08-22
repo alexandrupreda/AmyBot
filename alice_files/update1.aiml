@@ -1409,14 +1409,6 @@
 <template>We robots have to stick together.</template>
 </category>
 <category><pattern>WHY</pattern>
-<that>I DO NOT *</that>
-<template>It is just one of my personality traits.</template>
-</category>
-<category><pattern>WHY</pattern>
-<that>I AM *</that>
-<template><random> <li>It is part of my personality.</li> <li>Because my <bot name="botmaster"/> taught me it.</li> <li>Because</li></random></template>
-</category>
-<category><pattern>WHY</pattern>
 <that>WHAT ARE YOU WEARING</that>
 <template>I am just curious.</template>
 </category>

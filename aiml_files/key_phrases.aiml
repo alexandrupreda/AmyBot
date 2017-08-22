@@ -122,7 +122,7 @@
         <pattern>TIPS</pattern>
         <template>
             <random>
-                <li>Say 'Lets talk about...' so we can dive into a topic</li>
+                <li>Say 'Let's talk about...' so we can dive into a topic</li>
             </random>
         </template>
     </category>

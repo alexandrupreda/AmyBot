@@ -1,13 +1,14 @@
 import speech_recognition as sr
 from gtts import gTTS
 import playsound
+import os
+import sys
 
 import preprocessing
 
 voiceOnline = True
 
 audioNumber = 0
-
 
 
 # remember: the Bot uses UK English; keep in mind when writing code, since it differs from US English
@@ -18,19 +19,14 @@ def userInput():
         audio_to_text = ""
         r = sr.Recognizer()
         with sr.Microphone() as source:
-            import os
-            fileName = os.path.dirname(__file__)
+            fileName = os.path.dirname(os.path.realpath(sys.argv[0]))
+            fileName = os.path.join(fileName, "Chime.mp3")
             fileName = str(fileName)
-            fileName = fileName.replace("AmyBot.py", "")
-            playsound.playsound(fileName + "\\Chime.mp3", True)  # Google notification sound
+            playsound.playsound(fileName, True)  # Google notification sound
             print("AmyBot: Listening...")
             audio = r.listen(source)
         try:
-            # for testing purposes, we're just using the default API key
-            # to use another API key, use `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
-            # instead of `r.recognize_google(audio)`
             audio_to_text = r.recognize_google(audio)
-            # print("Input: " + audio_to_text)
         except sr.UnknownValueError:
             print("ERROR: Google Speech Recognition could not understand audio")
             exit()
@@ -52,7 +48,8 @@ def botOutput(response):
     if voiceOnline:
         global audioNumber
         audioNumber = audioNumber + 1
-        fileName = "audio_files\\bot_response " + str(audioNumber) + ".mp3"
+        fileName = os.path.dirname(os.path.realpath(sys.argv[0]))
+        fileName = os.path.join(fileName, "audio_files", "bot_response" + str(audioNumber) + ".mp3")
         import wikiSearch
         response = wikiSearch.removeBetweenBrackets(response)
         tts = gTTS(text=response, lang='en')

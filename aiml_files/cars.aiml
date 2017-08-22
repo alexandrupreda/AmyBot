@@ -10,6 +10,7 @@
       <random>
         <li>Which car brand do you want to get?</li>
         <li>Have you thought of which car brand do you want to get?</li>
+        <li>Is there any particular car brand do you want to get?</li>
       </random>
     </template>
   </category>
@@ -155,24 +156,18 @@
       <template>I don't know, I just do not think they are reliable.</template>
     </category>
 
-    <category>
-      <pattern>WHAT ABOUT *</pattern>
-      <template>
-        <srai>BUY A CAr</srai>
-      </template>
-    </category>
 
     <!--TODO Recursive conversation-->
 
     <!--BRAND-->
   <category>
     <pattern>I LIKE * CARS</pattern>
-    <template>I'm with you on this one, <set name="user_car_brand"><star/></set>s are neat</template>
+    <template>I'm with you on this one, <set name="car_brand"><star/></set>s are neat</template>
   </category>
 
   <category>
     <pattern>DO YOU KNOW WHAT KIND OF CARS I LIKE</pattern>
-    <template>Well, I know you like <get name="user_car_brand"/> cars</template>
+    <template>Well, I know you like <get name="car_brand"/> cars</template>
   </category>
   
   <!--SEATS-->

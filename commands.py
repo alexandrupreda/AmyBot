@@ -11,9 +11,9 @@ console = "CONSOLE(" + currentFile + "): "
 # learn commands
 def learn():
     print console + "This is a developer option. PROCEED WITH CARE!"
-    IO.botOutput("What's the topic about")
-    fileName = IO.userInput()
-    fileName = "aiml_files\\" + fileName + ".aiml"
+    IO.botOutput("What's the topic about? ")
+    fileName = os.path.dirname(os.path.realpath(sys.argv[0]))
+    fileName = os.path.join(fileName, "aiml_files", IO.userInput() + ".aiml")
     print console + "Accessing " + fileName + "..."
 
     stringToAdd = ""
@@ -43,7 +43,7 @@ def learn():
         if noAnswer(userInput):
             break
 
-    stringToAdd += "\n\n\t</topic>" + "\n</aiml>"
+    stringToAdd += "\n</aiml>"
 
     deleteLastLineFromFile(fileName)
     deleteLastLineFromFile(fileName)

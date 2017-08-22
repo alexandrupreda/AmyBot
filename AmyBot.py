@@ -20,16 +20,13 @@ brain = "bot_brain.brn"
 # clears the audio folder of any previous bot responses audio files
 # https://stackoverflow.com/questions/185936/delete-folder-contents-in-python
 def emptyAudioFolder():
-    import os, shutil
-    folder = os.path.dirname(os.path.realpath(__file__))
-    folder = os.path.join(folder,"audio_files")
-    print "folder: " + folder
+    folder = os.path.dirname(os.path.realpath(sys.argv[0]))
+    folder = os.path.join(folder, "audio_files")
     for the_file in os.listdir(folder):
         file_path = os.path.join(folder, the_file)
         try:
             if os.path.isfile(file_path):
                 os.unlink(file_path)
-                # elif os.path.isdir(file_path): shutil.rmtree(file_path)
         except Exception as e:
             print(e)
 
@@ -76,12 +73,11 @@ kernel.setPredicate("amy_name", "AmyBot")
 kernel.setPredicate("amy_short", "Amy")
 kernel.setPredicate("creator", "Alexandru Preda")
 kernel.setPredicate("name", "Alex")
-kernel.setPredicate("movie_choice", "")
 
 # kernel now ready for use
 print console + "AmyBot is operational..."
 
-# creates an UI for the bot, suing Tkinter
+# creates an UI for the bot, using Tkinter
 # based on http://www.python-course.eu/tkinter_buttons.php
 if IO.voiceOnline:
     root = tk.Tk()

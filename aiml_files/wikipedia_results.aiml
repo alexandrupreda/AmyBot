@@ -45,5 +45,9 @@
 	<category>
 	<pattern>* INTERESTED IN GOTHAM</pattern>
 	<template>Gotham is an American crime drama television series developed by Bruno Heller, based on characters published by DC Comics and appearing in the Batman franchise, primarily those of James Gordon and Bruce Wayne. The series stars Ben McKenzie as the young Gordon, while Heller executive-produces, along with Danny Cannon, who also directed the pilot.</template>
+	</category>
+	<category>
+	<pattern>* INTERESTED IN FLAMINGOS</pattern>
+	<template>Flamingos or flamingoes  are a type of wading bird in the family Phoenicopteridae, the only family in the order Phoenicopteriformes.</template>
 	</category>
 </aiml>
