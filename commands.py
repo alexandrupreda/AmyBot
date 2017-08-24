@@ -11,10 +11,16 @@ console = "CONSOLE(" + currentFile + "): "
 # learn commands
 def learn():
     print console + "This is a developer option. PROCEED WITH CARE!"
-    IO.botOutput("What's the topic about? ")
+    IO.botOutput("What's the topic or section (file) you want it stored in? ")
     fileName = os.path.dirname(os.path.realpath(sys.argv[0]))
     fileName = os.path.join(fileName, "aiml_files", IO.userInput() + ".aiml")
-    print console + "Accessing " + fileName + "..."
+
+    if os.path.isfile(fileName):
+        print console + "Accessing " + fileName + "..."
+        IO.botOutput("Accessing that file...")
+    else:
+        IO.botOutput("Sorry, I checked this path but the associated file was not found")
+        return
 
     stringToAdd = ""
 
@@ -30,7 +36,8 @@ def learn():
         context = IO.userInput()
         if yesAnswer(context):
             stringToAdd += "\n\t<that>"
-            that = raw_input(console + "context: ")
+            IO.botOutput("What's the context: ")
+            that = IO.userInput()
             stringToAdd += that.upper() + "</that>"
 
         stringToAdd += "\n\t<template>"
@@ -45,7 +52,6 @@ def learn():
 
     stringToAdd += "\n</aiml>"
 
-    deleteLastLineFromFile(fileName)
     deleteLastLineFromFile(fileName)
     fileToWrite = open(fileName, "a")
     fileToWrite.write(stringToAdd)

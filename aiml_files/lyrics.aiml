@@ -1,14 +1,8 @@
 <aiml version="1.0.1" encoding="UTF-8">
   <!-- lyrics.aiml -->
-
-  <topic name = "LYRICS">
-
+
 	<category>
-      <pattern>*</pattern>
-      <template>
-          I forgot
-      </template>
-  </category>
-
-	</topic>
+	<pattern>LOVE IS TOO HIGH</pattern>
+	<template>to bring me down</template>
+	</category>
 </aiml>

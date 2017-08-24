@@ -43,6 +43,7 @@ def initialiseAmyBot():
         os.remove("bot_brain.brn")
         kernel.bootstrap(learnFiles=lib, commands="load aiml b")
         kernel.saveBrain(brain)
+        print "Carry on..."
         return
 
     bot_response = kernel.respond(user_message)
@@ -53,7 +54,7 @@ def initialiseAmyBot():
         os.remove("bot_brain.brn")
         kernel.bootstrap(learnFiles=lib, commands="load aiml b")
         kernel.saveBrain(brain)
-
+        print "Carry on..."
 
 # empty the audio_files folder
 emptyAudioFolder()
